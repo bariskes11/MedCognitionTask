@@ -17,4 +17,9 @@ public static class PublicCommons
     SelectGenderPanel,
     SelectClinicStatePanel
     }
+    public enum PatientGender
+    { 
+    Male,
+    Female,
+    }
 }
