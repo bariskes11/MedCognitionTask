@@ -53,10 +53,10 @@ public class NetworkManager : MonoBehaviour
     {
         try
         {
-            tcpListener = new TcpListener(IPAddress.Parse(GetLocalIPAddress()), 8080);
+            tcpListener = new TcpListener(IPAddress.Any, 8074);
             tcpListener.Start();
             Debug.Log("Server is listening");
-            Byte[] bytes = new Byte[1024];
+            Byte[] bytes = new Byte[512];
             while (true)
             {
                 using (connectedTcpClient = tcpListener.AcceptTcpClient())
