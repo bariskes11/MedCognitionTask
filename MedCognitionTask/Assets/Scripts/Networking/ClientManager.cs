@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -19,7 +18,13 @@ public class ClientManager : MonoBehaviour
         ConnectToTcpServer();
     }
     // Update is called once per frame
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SendMessage();
+        }
+    }
     /// <summary>   
     /// Setup socket connection.    
     /// </summary>  
@@ -43,7 +48,6 @@ public class ClientManager : MonoBehaviour
     {
         try
         {
-            
             socketConnection = new TcpClient("127.0.0.1", 8052);
             Byte[] bytes = new Byte[1024];
             while (true)
@@ -71,9 +75,6 @@ public class ClientManager : MonoBehaviour
 
         Debug.Log("Exiting...");
     }
-
-  
-
     /// <summary>   
     /// Send message to server using socket connection.     
     /// </summary>  
