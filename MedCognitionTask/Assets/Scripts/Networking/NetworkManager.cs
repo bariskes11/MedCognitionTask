@@ -32,15 +32,28 @@ public class NetworkManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log($"Sending message");
+            
             SendMessage();
         }
+        
     }
-
+     string GetLocalIPAddress()
+    {
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            {
+                return ip.ToString();
+            }
+        }
+        throw new Exception("No network adapters with an IPv4 address in the system!");
+    }
     private void ListenForIncomingRequests()
     {
         try
         {
-            tcpListener = new TcpListener(IPAddress.Parse( "192.168.1.131"), 8052);
+            tcpListener = new TcpListener(IPAddress.Parse(GetLocalIPAddress()), 8080);
             tcpListener.Start();
             Debug.Log("Server is listening");
             Byte[] bytes = new Byte[1024];
