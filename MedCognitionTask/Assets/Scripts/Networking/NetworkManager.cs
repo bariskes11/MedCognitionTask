@@ -13,6 +13,8 @@ public class NetworkManager : MonoBehaviour
 {
     #region Unity Fields
     [SerializeField]
+    MasterPCIP masterPCIP;
+    [SerializeField]
     TextMeshProUGUI txtStatus;
     #endregion
 
@@ -42,7 +44,7 @@ public class NetworkManager : MonoBehaviour
     {
         try
         {
-            tcpListener = new TcpListener(IPAddress.Any, 8074);
+            tcpListener = new TcpListener(IPAddress.Parse(masterPCIP.MasterIp), 8074);
             tcpListener.Start();
             Debug.Log("Server is listening");
             Byte[] bytes = new Byte[512];

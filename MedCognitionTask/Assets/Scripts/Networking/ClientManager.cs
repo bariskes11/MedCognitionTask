@@ -9,11 +9,16 @@ using UnityEngine;
 
 public class ClientManager : MonoBehaviour
 {
-    #region private members     
+    #region Unity Fields
+    [SerializeField]
+    MasterPCIP masterPCIP;
+    #endregion
+
+
+    #region Fields
     private TcpClient socketConnection;
     private Thread clientReceiveThread;
     #endregion
-    // Use this for initialization  
     void Start()
     {
         ConnectToTcpServer();
@@ -44,7 +49,7 @@ public class ClientManager : MonoBehaviour
         try
         {
             
-            socketConnection = new TcpClient(GetLocalIPAddress(), 8074);
+            socketConnection = new TcpClient(masterPCIP.MasterIp, 8074);
             Byte[] bytes = new Byte[512];
             while (true)
             {
