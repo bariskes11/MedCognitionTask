@@ -44,7 +44,7 @@ public class ClientManager : MonoBehaviour
         try
         {
             
-            socketConnection = new TcpClient("127.0.0.1", 8052);
+            socketConnection = new TcpClient(IPAddress.Any(), 8052);
             Byte[] bytes = new Byte[1024];
             while (true)
             {
