@@ -19,13 +19,7 @@ public class ClientManager : MonoBehaviour
         ConnectToTcpServer();
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SendMessage();
-        }
-    }
+
     /// <summary>   
     /// Setup socket connection.    
     /// </summary>  
@@ -50,7 +44,7 @@ public class ClientManager : MonoBehaviour
         try
         {
             
-            socketConnection = new TcpClient("92.168.1.33", 8052);
+            socketConnection = new TcpClient("127.0.0.1", 8052);
             Byte[] bytes = new Byte[1024];
             while (true)
             {
