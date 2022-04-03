@@ -50,7 +50,7 @@ public class ClientManager : MonoBehaviour
         try
         {
             
-            socketConnection = new TcpClient(GetLocalIPAddress(), 8052);
+            socketConnection = new TcpClient("92.168.1.131", 8052);
             Byte[] bytes = new Byte[1024];
             while (true)
             {
