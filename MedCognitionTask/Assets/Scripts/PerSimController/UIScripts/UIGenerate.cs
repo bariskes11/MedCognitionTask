@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using static PublicEnums;
 
-public class GenerateUI : MonoBehaviour
+public class UIGenerate : MonoBehaviour
 {
     #region Unity Fields
     [SerializeField]
