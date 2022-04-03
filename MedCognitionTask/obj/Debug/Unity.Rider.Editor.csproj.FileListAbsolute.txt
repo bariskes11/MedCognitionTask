@@ -1,0 +1,2 @@
+F:\MedCognition\MedCognitionTask\MedCognitionTask\obj\Debug\Unity.Rider.Editor.csproj.AssemblyReference.cache
+F:\MedCognition\MedCognitionTask\MedCognitionTask\obj\Debug\Unity.Rider.Editor.csproj.CoreCompileInputs.cache

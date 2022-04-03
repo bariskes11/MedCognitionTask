@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588667ff229e32f4ca6eab18c0428a42, type: 3}
   m_Name: SelectGenderPanel
   m_EditorClassIdentifier: 
-  PanelHeader: 0
+  PanelType: 0
+  PanelHeader: Select a Patient
   PanelItemList:
   - Adult Male
   - Adult Female

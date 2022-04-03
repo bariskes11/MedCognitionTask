@@ -17,6 +17,7 @@ public static class FactoryGenerator<T> where T : class
     private static bool isinitialized = factoryTypesByName != null;
     public static void InitializeFactoryGenerator()
     {
+
         // if started no need to work code again
         if (isinitialized) { return; }
         // create instance of dictionary to add
@@ -24,7 +25,7 @@ public static class FactoryGenerator<T> where T : class
         // get all the factories which arent abstract and child of our main class provided with (T)  
         // this line uses System.Linq
         var factoryTypes = Assembly.GetAssembly(typeof(T)).GetTypes().Where(x => x.IsClass && !x.IsAbstract && x.IsSubclassOf((typeof(T))));
-
+        
         foreach (var type in factoryTypes)
         {
             //Creates instance of subclass

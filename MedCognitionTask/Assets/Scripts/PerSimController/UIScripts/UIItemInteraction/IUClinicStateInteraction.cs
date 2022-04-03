@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PublicEnums;
 
-public class UIGenderItemInfo : ItemInfo
+public class IUClinicStateInteraction : ItemInfo
 {
     protected override void Start()
     {
@@ -12,6 +13,7 @@ public class UIGenderItemInfo : ItemInfo
     protected override void ItemSelected()
     {
         base.ItemSelected();
+        EventManager.OnSelectedItem.Invoke(this.currentIndex, PanelType.SelectGenderPanel);
 
     }
 }

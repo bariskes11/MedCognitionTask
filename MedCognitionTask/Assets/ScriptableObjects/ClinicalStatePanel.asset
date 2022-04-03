@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: ClinicalStatePanel
   m_EditorClassIdentifier: 
   PanelType: 0
-  PanelHeader: Select Gender
+  PanelHeader: Select a clinical state
   PanelItemList:
-  - 
-  - 
+  - Moderate Respiratory Distress
+  - Severe Respiratory Distress - 1
+  - Chest Pain -3
+  - Severe Respiratory Distress - 2
+  - Coughing With Hands
