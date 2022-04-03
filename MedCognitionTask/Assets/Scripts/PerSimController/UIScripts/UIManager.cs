@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using static PublicEnums;
+using static PublicCommons;
 
 public class UIManager : MonoBehaviour
 {
@@ -29,10 +29,8 @@ public class UIManager : MonoBehaviour
         btnBack.onClick.RemoveAllListeners();
         btnBack.onClick.AddListener(ReturnToFirstPanel); // return to first panel on button click
     }
-
     private void SendDataToClient(int selectionindex, PanelType panel)
     {
-        Debug.Log($"Selected Something {panel}");
         if (panel == PanelType.SelectGenderPanel)
         {
             SetCurrentPanel(PanelType.SelectClinicStatePanel);

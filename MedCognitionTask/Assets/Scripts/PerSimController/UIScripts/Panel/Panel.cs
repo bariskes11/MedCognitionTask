@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static PublicEnums;
+using static PublicCommons;
 
 public class Panel : MonoBehaviour, IPanel
 {
@@ -12,7 +12,7 @@ public class Panel : MonoBehaviour, IPanel
     int index;
     #endregion
     #region Properties
-    public PublicEnums.PanelType PanelType { get => this.panelType; set => this.panelType = value; }
+    public PublicCommons.PanelType PanelType { get => this.panelType; set => this.panelType = value; }
     public int Index { get => this.index; set => this.index = value; }
     public string Name { get => this.gameObject.name; set => this.gameObject.name = value; }
     #endregion

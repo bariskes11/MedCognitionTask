@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using static PublicEnums;
+using static PublicCommons;
 
 public static class EventManager
 {

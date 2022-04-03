@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static PublicEnums;
+using static PublicCommons;
 
 [CreateAssetMenu(fileName = "Panel", menuName = "Assets/Create/Create Panel", order = 1)]
 public class PanelUIInfo : ScriptableObject

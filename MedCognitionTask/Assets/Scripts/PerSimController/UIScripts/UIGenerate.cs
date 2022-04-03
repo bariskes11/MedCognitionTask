@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static PublicEnums;
+using static PublicCommons;
 
 public class UIGenerate : MonoBehaviour
 {
