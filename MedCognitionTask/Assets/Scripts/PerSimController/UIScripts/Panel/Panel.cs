@@ -13,13 +13,13 @@ public class Panel : MonoBehaviour, IPanel
     #endregion
     #region Properties
     public PublicEnums.PanelType PanelType { get => this.panelType; set => this.panelType = value; }
-    public int Index { get => index; set => index = value; }
+    public int Index { get => this.index; set => this.index = value; }
     public string Name { get => this.gameObject.name; set => this.gameObject.name = value; }
     #endregion
     #region Public Methods
     public void SetActive(bool isactive)
     {
-        this.SetActive(isactive);
+        this.gameObject.SetActive(isactive);
     }
     #endregion
 

@@ -28,7 +28,6 @@ public class UIGenerate : MonoBehaviour
 
     private void SetUI()
     {
-        Debug.Log($"Header {this.panelUIInfo.PanelHeader}");
         txtHeader.text = this.panelUIInfo.PanelHeader;
         int index = 1; // starts from one as Items starts from one
         foreach (var item in this.panelUIInfo.PanelItemList)

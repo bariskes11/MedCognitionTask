@@ -32,10 +32,10 @@ public class UIManager : MonoBehaviour
 
     private void SendDataToClient(int selectionindex, PanelType panel)
     {
+        Debug.Log($"Selected Something {panel}");
         if (panel == PanelType.SelectGenderPanel)
-        { 
-
-        SetCurrentPanel(PanelType.SelectGenderPanel);
+        {
+            SetCurrentPanel(PanelType.SelectClinicStatePanel);
         }
     }
     #endregion
@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
         this.panels.ForEach(p => p.SetActive(false));
         this.panels.Where(x => x.PanelType == panelType).FirstOrDefault().SetActive(true);
     }
- 
+
 
     void ReturnToFirstPanel()
     {
