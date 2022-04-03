@@ -5,12 +5,20 @@ using static PublicEnums;
 
 public abstract class UIFactory : MonoBehaviour
 {
-    public abstract ResourceItem Name { get; }
-    
-    public virtual void CreateUI()
+    public abstract string Name { get; }
+
+    public virtual GameObject CreateUI(Transform parent = null)
     {
-        GameObject gmObj = Resources.Load(this.Name.ToString()) as GameObject;
-        Instantiate(gmObj);
+        GameObject gmObj = Resources.Load(this.Name) as GameObject;
+        GameObject gmcreated = Instantiate(gmObj);
+        if (parent != null)
+        {
+            gmcreated.transform.parent = parent;
+            gmcreated.transform.localScale=Vector3.one;
+        }
+
         gmObj.transform.position = Vector3.zero;
+
+        return gmcreated;
     }
 }

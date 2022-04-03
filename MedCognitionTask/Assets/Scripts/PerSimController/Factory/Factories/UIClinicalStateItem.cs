@@ -5,5 +5,6 @@ using static PublicEnums;
 
 public class UIClinicalStateItem : UIFactory
 {
-    public override ResourceItem Name => ResourceItem.UIClinicalStateItem;
+    public override string Name => ResourceItem.UIClinicalStateItem.ToString();
+
 }

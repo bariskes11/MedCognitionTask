@@ -44,7 +44,7 @@ public abstract class ItemInfo : MonoBehaviour
     protected virtual void ItemSelected()
     {
 #if UNITY_EDITOR    
-        Debug.Log($"Clicked On Item {this.txtItemtext}", this);
+        Debug.Log($"Clicked On Item {this.currentIndex} {this.txtItemtext.text}", this);
 #endif
     }
     #endregion

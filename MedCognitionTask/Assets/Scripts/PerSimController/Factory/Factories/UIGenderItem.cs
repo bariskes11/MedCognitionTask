@@ -5,5 +5,6 @@ using static PublicEnums;
 
 public class UIGenderItem : UIFactory
 {
-    public override ResourceItem Name => ResourceItem.UIGenderItem;
+    public override string Name => ResourceItem.UIGenderItem.ToString();
+
 }
