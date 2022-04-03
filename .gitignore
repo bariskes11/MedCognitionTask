@@ -2,12 +2,16 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+**/[Ll]ibrary/
 /[Ll]ibrary/
+**/[Tt]emp/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+**/[Ll]ogs/
+**/TPSMultiplayerGame_clone_0/
 /[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
@@ -44,6 +48,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.mdb
+*.vsconfig
 *.opendb
 *.VC.db
 
@@ -70,3 +75,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+ 
+
