@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -48,7 +49,8 @@ public class ClientManager : MonoBehaviour
     {
         try
         {
-            socketConnection = new TcpClient("127.0.0.1", 8052);
+            
+            socketConnection = new TcpClient(GetLocalIPAddress(), 8052);
             Byte[] bytes = new Byte[1024];
             while (true)
             {
@@ -75,6 +77,20 @@ public class ClientManager : MonoBehaviour
 
         Debug.Log("Exiting...");
     }
+
+    public static string GetLocalIPAddress()
+    {
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            {
+                return ip.ToString();
+            }
+        }
+        throw new Exception("No network adapters with an IPv4 address in the system!");
+    }
+
     /// <summary>   
     /// Send message to server using socket connection.     
     /// </summary>  
