@@ -1,50 +1,97 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
-using Photon.Realtime;
-using TMPro;
 
-public class NetworkManager : MonoBehaviourPunCallbacks
+using TMPro;
+using System.Net.Sockets;
+using System.Threading;
+using System.Net;
+using System;
+using System.Text;
+
+public class NetworkManager : MonoBehaviour
 {
     #region Unity Fields
     [SerializeField]
     TextMeshProUGUI txtStatus;
     #endregion
 
-    private void Awake()
+    private TcpListener tcpListener;
+    private Thread tcpListenerThread;
+    private TcpClient connectedTcpClient;
+
+    void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
-        this.txtStatus.text = "Waiting For Local Connection.....";
+        tcpListenerThread = new Thread(new ThreadStart(ListenForIncomingRequests));
+        tcpListenerThread.IsBackground = true;
+        tcpListenerThread.Start();
     }
-    #region Photon Override Methods
-    public override void OnConnectedToMaster()
+
+    void Update()
     {
-        PhotonNetwork.JoinLobby(TypedLobby.Default);
-        this.txtStatus.text = "Connected To Internet";
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log($"Sending message");
+            SendMessage();
+        }
     }
-    public override void OnDisconnected(DisconnectCause cause)
+
+    private void ListenForIncomingRequests()
     {
-        this.txtStatus.text = "Disconnected from Network";
+        try
+        {
+            tcpListener = new TcpListener(IPAddress.Any, 8052);
+            tcpListener.Start();
+            Debug.Log("Server is listening");
+            Byte[] bytes = new Byte[1024];
+            while (true)
+            {
+                using (connectedTcpClient = tcpListener.AcceptTcpClient())
+                {
+                    using (NetworkStream stream = connectedTcpClient.GetStream())
+                    {
+                        int length;
+                        while ((length = stream.Read(bytes, 0, bytes.Length)) != 0)
+                        {
+                            var incomingData = new byte[length];
+                            Array.Copy(bytes, 0, incomingData, 0, length);
+                            string clientMessage = Encoding.ASCII.GetString(incomingData);
+                            Debug.Log("client message received as: " + clientMessage);
+                        }
+                    }
+                }
+            }
+        }
+        catch (SocketException socketException)
+        {
+            Debug.Log("SocketException " + socketException.ToString());
+        }
+
+        Debug.Log("Exiting...");
     }
-    public override void OnJoinedLobby()
+
+    private void SendMessage()
     {
-        this.txtStatus.text = "Joined Lobby";
-        JoinOrCreateRoom();
+        if (connectedTcpClient == null)
+        {
+            return;
+        }
+
+        try
+        {
+            NetworkStream stream = connectedTcpClient.GetStream();
+            if (stream.CanWrite)
+            {
+                string serverMessage = "This is a message from your server.";
+                byte[] serverMessageAsByteArray = Encoding.ASCII.GetBytes(serverMessage);
+                stream.Write(serverMessageAsByteArray, 0, serverMessageAsByteArray.Length);
+                Debug.Log("Server sent his message - should be received by client");
+            }
+            
+        }
+        catch (SocketException socketException)
+        {
+            Debug.Log("Socket exception: " + socketException);
+        }
     }
-    public override void OnJoinedRoom()
-    {
-        this.txtStatus.color = Color.green;
-        this.txtStatus.text = "Connection Established..";
-    }
-    #endregion
-    #region Private Methods
-    void JoinOrCreateRoom()
-    {
-        RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 2;
-        // there will always be one room
-        PhotonNetwork.JoinOrCreateRoom(PublicCommons.ROOMNAME, roomOptions, TypedLobby.Default);
-    }
-    #endregion
 }

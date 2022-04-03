@@ -25,11 +25,11 @@ public class UIManager : MonoBehaviour
             Debug.Log($"<color=red> THERE IS NO BACK BUTTON ASSIGNED!!</color>");
 #endif
         SetCurrentPanel(PanelType.SelectGenderPanel); // activates selected panel
-        EventManager.OnSelectedItem.AddListener(SendDataToClient);
+        EventManager.OnSelectedGender.AddListener(SendDataToClient);
         btnBack.onClick.RemoveAllListeners();
         btnBack.onClick.AddListener(ReturnToFirstPanel); // return to first panel on button click
     }
-    private void SendDataToClient(int selectionindex, PanelType panel)
+    private void SendDataToClient(PatientGender gender, PanelType panel)
     {
         if (panel == PanelType.SelectGenderPanel)
         {

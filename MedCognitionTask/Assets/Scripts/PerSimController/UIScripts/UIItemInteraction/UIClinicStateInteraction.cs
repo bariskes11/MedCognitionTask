@@ -13,7 +13,7 @@ public class UIClinicStateInteraction : ItemInfo
     protected override void ItemSelected()
     {
         base.ItemSelected();
-        EventManager.OnSelectedItem.Invoke(this.currentIndex, PanelType.SelectClinicStatePanel);
+        EventManager.OnSelectedGender.Invoke(PatientGender.Male, PanelType.SelectClinicStatePanel);
 
     }
 }

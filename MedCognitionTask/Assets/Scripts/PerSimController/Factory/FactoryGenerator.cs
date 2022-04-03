@@ -29,11 +29,11 @@ public static class FactoryGenerator<T> where T : class
         foreach (var type in factoryTypes)
         {
             //Creates instance of subclass
-            var factory = Activator.CreateInstance(type) as T;
+            var factory = Activator.CreateInstance(type);
             // get Name property of class as string 
             var rslt = factory.GetType().GetProperty(NAME).GetValue(factory) as string;
             // add to Dictionary
-            factoryTypesByName.Add(rslt, factory);
+            factoryTypesByName.Add(rslt, factory as T);
         }
     }
     /// 
