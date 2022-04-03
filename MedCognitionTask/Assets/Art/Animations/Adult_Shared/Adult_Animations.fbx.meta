@@ -1,0 +1,2888 @@
+fileFormatVersion: 2
+guid: f6e71047b76d4da46878841e328a14da
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Body
+  - first:
+      1: 100004
+    second: Head
+  - first:
+      1: 100006
+    second: Head_Bone005
+  - first:
+      1: 100008
+    second: Head_End_Bone006
+  - first:
+      1: 100010
+    second: L_Clavicle_Bone001
+  - first:
+      1: 100012
+    second: L_Foot_Bone003
+  - first:
+      1: 100014
+    second: L_Hand_Bone004
+  - first:
+      1: 100016
+    second: L_Index_Fing_Bone001
+  - first:
+      1: 100018
+    second: L_Index_Fing_Bone002
+  - first:
+      1: 100020
+    second: L_Index_Fing_Bone003
+  - first:
+      1: 100022
+    second: L_Index_Fing_End_Bone004
+  - first:
+      1: 100024
+    second: L_Leg_End_Bone005
+  - first:
+      1: 100026
+    second: L_Little_Fing_Bone001
+  - first:
+      1: 100028
+    second: L_Little_Fing_Bone002
+  - first:
+      1: 100030
+    second: L_Little_Fing_Bone003
+  - first:
+      1: 100032
+    second: L_Little_Fing_End_Bone004
+  - first:
+      1: 100034
+    second: L_Lower_Arm_Bone003
+  - first:
+      1: 100036
+    second: L_Lower_Leg_Bone002
+  - first:
+      1: 100038
+    second: L_Mid_Fing_Bone001
+  - first:
+      1: 100040
+    second: L_Mid_Fing_Bone002
+  - first:
+      1: 100042
+    second: L_Mid_Fing_Bone003
+  - first:
+      1: 100044
+    second: L_Mid_Fing_End_Bone004
+  - first:
+      1: 100046
+    second: L_Ring_Fing_Bone001
+  - first:
+      1: 100048
+    second: L_Ring_Fing_Bone002
+  - first:
+      1: 100050
+    second: L_Ring_Fing_Bone003
+  - first:
+      1: 100052
+    second: L_Ring_Fing_End_Bone004
+  - first:
+      1: 100054
+    second: L_Thumb_Bone001
+  - first:
+      1: 100056
+    second: L_Thumb_Bone002
+  - first:
+      1: 100058
+    second: L_Thumb_Bone003
+  - first:
+      1: 100060
+    second: L_Thumb_End_Bone004
+  - first:
+      1: 100062
+    second: L_Toe_Bone004
+  - first:
+      1: 100064
+    second: L_Upper_Arm_Bone002
+  - first:
+      1: 100066
+    second: L_Upper_Leg_Bone001
+  - first:
+      1: 100068
+    second: Left_Eye
+  - first:
+      1: 100070
+    second: Neck_Bone004
+  - first:
+      1: 100072
+    second: Pelvis_Bone001
+  - first:
+      1: 100074
+    second: R_Clavicle_Bone001
+  - first:
+      1: 100076
+    second: R_Foot_Bone003
+  - first:
+      1: 100078
+    second: R_Hand_Bone004
+  - first:
+      1: 100080
+    second: R_Index_Fing_Bone001
+  - first:
+      1: 100082
+    second: R_Index_Fing_Bone002
+  - first:
+      1: 100084
+    second: R_Index_Fing_Bone003
+  - first:
+      1: 100086
+    second: R_Index_Fing_End_Bone004
+  - first:
+      1: 100088
+    second: R_Leg_End_Bone005
+  - first:
+      1: 100090
+    second: R_Little_Fing_Bone001
+  - first:
+      1: 100092
+    second: R_Little_Fing_Bone002
+  - first:
+      1: 100094
+    second: R_Little_Fing_Bone003
+  - first:
+      1: 100096
+    second: R_Little_Fing_End_Bone004
+  - first:
+      1: 100098
+    second: R_Lower_Arm_Bone003
+  - first:
+      1: 100100
+    second: R_Lower_Leg_Bone002
+  - first:
+      1: 100102
+    second: R_Mid_Fing_Bone001
+  - first:
+      1: 100104
+    second: R_Mid_Fing_Bone002
+  - first:
+      1: 100106
+    second: R_Mid_Fing_Bone003
+  - first:
+      1: 100108
+    second: R_Mid_Fing_End_Bone004
+  - first:
+      1: 100110
+    second: R_Ring_Fing_Bone001
+  - first:
+      1: 100112
+    second: R_Ring_Fing_Bone002
+  - first:
+      1: 100114
+    second: R_Ring_Fing_Bone003
+  - first:
+      1: 100116
+    second: R_Ring_Fing_End_Bone004
+  - first:
+      1: 100118
+    second: R_Thumb_Bone001
+  - first:
+      1: 100120
+    second: R_Thumb_Bone002
+  - first:
+      1: 100122
+    second: R_Thumb_Bone003
+  - first:
+      1: 100124
+    second: R_Thumb_End_Bone004
+  - first:
+      1: 100126
+    second: R_Toe_Bone004
+  - first:
+      1: 100128
+    second: R_Upper_Arm_Bone002
+  - first:
+      1: 100130
+    second: R_Upper_Leg_Bone001
+  - first:
+      1: 100132
+    second: Right_Eye
+  - first:
+      1: 100134
+    second: Shirt1
+  - first:
+      1: 100136
+    second: Spine_Bone002
+  - first:
+      1: 100138
+    second: Spine_Bone003
+  - first:
+      1: 100140
+    second: Torso_Arms_Head
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Body
+  - first:
+      4: 400004
+    second: Head
+  - first:
+      4: 400006
+    second: Head_Bone005
+  - first:
+      4: 400008
+    second: Head_End_Bone006
+  - first:
+      4: 400010
+    second: L_Clavicle_Bone001
+  - first:
+      4: 400012
+    second: L_Foot_Bone003
+  - first:
+      4: 400014
+    second: L_Hand_Bone004
+  - first:
+      4: 400016
+    second: L_Index_Fing_Bone001
+  - first:
+      4: 400018
+    second: L_Index_Fing_Bone002
+  - first:
+      4: 400020
+    second: L_Index_Fing_Bone003
+  - first:
+      4: 400022
+    second: L_Index_Fing_End_Bone004
+  - first:
+      4: 400024
+    second: L_Leg_End_Bone005
+  - first:
+      4: 400026
+    second: L_Little_Fing_Bone001
+  - first:
+      4: 400028
+    second: L_Little_Fing_Bone002
+  - first:
+      4: 400030
+    second: L_Little_Fing_Bone003
+  - first:
+      4: 400032
+    second: L_Little_Fing_End_Bone004
+  - first:
+      4: 400034
+    second: L_Lower_Arm_Bone003
+  - first:
+      4: 400036
+    second: L_Lower_Leg_Bone002
+  - first:
+      4: 400038
+    second: L_Mid_Fing_Bone001
+  - first:
+      4: 400040
+    second: L_Mid_Fing_Bone002
+  - first:
+      4: 400042
+    second: L_Mid_Fing_Bone003
+  - first:
+      4: 400044
+    second: L_Mid_Fing_End_Bone004
+  - first:
+      4: 400046
+    second: L_Ring_Fing_Bone001
+  - first:
+      4: 400048
+    second: L_Ring_Fing_Bone002
+  - first:
+      4: 400050
+    second: L_Ring_Fing_Bone003
+  - first:
+      4: 400052
+    second: L_Ring_Fing_End_Bone004
+  - first:
+      4: 400054
+    second: L_Thumb_Bone001
+  - first:
+      4: 400056
+    second: L_Thumb_Bone002
+  - first:
+      4: 400058
+    second: L_Thumb_Bone003
+  - first:
+      4: 400060
+    second: L_Thumb_End_Bone004
+  - first:
+      4: 400062
+    second: L_Toe_Bone004
+  - first:
+      4: 400064
+    second: L_Upper_Arm_Bone002
+  - first:
+      4: 400066
+    second: L_Upper_Leg_Bone001
+  - first:
+      4: 400068
+    second: Left_Eye
+  - first:
+      4: 400070
+    second: Neck_Bone004
+  - first:
+      4: 400072
+    second: Pelvis_Bone001
+  - first:
+      4: 400074
+    second: R_Clavicle_Bone001
+  - first:
+      4: 400076
+    second: R_Foot_Bone003
+  - first:
+      4: 400078
+    second: R_Hand_Bone004
+  - first:
+      4: 400080
+    second: R_Index_Fing_Bone001
+  - first:
+      4: 400082
+    second: R_Index_Fing_Bone002
+  - first:
+      4: 400084
+    second: R_Index_Fing_Bone003
+  - first:
+      4: 400086
+    second: R_Index_Fing_End_Bone004
+  - first:
+      4: 400088
+    second: R_Leg_End_Bone005
+  - first:
+      4: 400090
+    second: R_Little_Fing_Bone001
+  - first:
+      4: 400092
+    second: R_Little_Fing_Bone002
+  - first:
+      4: 400094
+    second: R_Little_Fing_Bone003
+  - first:
+      4: 400096
+    second: R_Little_Fing_End_Bone004
+  - first:
+      4: 400098
+    second: R_Lower_Arm_Bone003
+  - first:
+      4: 400100
+    second: R_Lower_Leg_Bone002
+  - first:
+      4: 400102
+    second: R_Mid_Fing_Bone001
+  - first:
+      4: 400104
+    second: R_Mid_Fing_Bone002
+  - first:
+      4: 400106
+    second: R_Mid_Fing_Bone003
+  - first:
+      4: 400108
+    second: R_Mid_Fing_End_Bone004
+  - first:
+      4: 400110
+    second: R_Ring_Fing_Bone001
+  - first:
+      4: 400112
+    second: R_Ring_Fing_Bone002
+  - first:
+      4: 400114
+    second: R_Ring_Fing_Bone003
+  - first:
+      4: 400116
+    second: R_Ring_Fing_End_Bone004
+  - first:
+      4: 400118
+    second: R_Thumb_Bone001
+  - first:
+      4: 400120
+    second: R_Thumb_Bone002
+  - first:
+      4: 400122
+    second: R_Thumb_Bone003
+  - first:
+      4: 400124
+    second: R_Thumb_End_Bone004
+  - first:
+      4: 400126
+    second: R_Toe_Bone004
+  - first:
+      4: 400128
+    second: R_Upper_Arm_Bone002
+  - first:
+      4: 400130
+    second: R_Upper_Leg_Bone001
+  - first:
+      4: 400132
+    second: Right_Eye
+  - first:
+      4: 400134
+    second: Shirt1
+  - first:
+      4: 400136
+    second: Spine_Bone002
+  - first:
+      4: 400138
+    second: Spine_Bone003
+  - first:
+      4: 400140
+    second: Torso_Arms_Head
+  - first:
+      21: 2100000
+    second: lambert2
+  - first:
+      21: 2100002
+    second: Default_Material
+  - first:
+      23: 2300000
+    second: Left_Eye
+  - first:
+      23: 2300002
+    second: Right_Eye
+  - first:
+      33: 3300000
+    second: Left_Eye
+  - first:
+      33: 3300002
+    second: Right_Eye
+  - first:
+      43: 4300000
+    second: Head
+  - first:
+      43: 4300002
+    second: Torso_Arms_Head
+  - first:
+      43: 4300004
+    second: Shirt1
+  - first:
+      43: 4300006
+    second: Body
+  - first:
+      43: 4300008
+    second: Right_Eye
+  - first:
+      43: 4300010
+    second: Left_Eye
+  - first:
+      74: 7400000
+    second: Coughing With Hands
+  - first:
+      74: 7400002
+    second: Defib
+  - first:
+      74: 7400004
+    second: Unconscious
+  - first:
+      74: 7400006
+    second: Coughing While Conscious
+  - first:
+      74: 7400008
+    second: Coughing While Unconscious
+  - first:
+      74: 7400010
+    second: Recovery Position
+  - first:
+      74: 7400012
+    second: Death
+  - first:
+      74: 7400014
+    second: Coughing With Right Hand
+  - first:
+      74: 7400016
+    second: Scared And Crying
+  - first:
+      74: 7400018
+    second: Oblivious
+  - first:
+      74: 7400020
+    second: In Pain
+  - first:
+      74: 7400022
+    second: Grimacing In Pain
+  - first:
+      74: 7400024
+    second: Skin Irritation
+  - first:
+      74: 7400026
+    second: Eye Rubbing
+  - first:
+      74: 7400028
+    second: Coughing With Left Hand
+  - first:
+      74: 7400030
+    second: Throat Irritation
+  - first:
+      74: 7400032
+    second: Normal Breath
+  - first:
+      74: 7400034
+    second: Mild Respiratory Distress
+  - first:
+      74: 7400036
+    second: Moderate Respiratory Distress
+  - first:
+      74: 7400038
+    second: Severe Respiratory Distress 001
+  - first:
+      74: 7400040
+    second: Severe Respiratory Distress 002
+  - first:
+      74: 7400042
+    second: Severe Respiratory Distress 003
+  - first:
+      74: 7400044
+    second: Agonal Respiratory
+  - first:
+      74: 7400046
+    second: Blink
+  - first:
+      74: 7400048
+    second: Head Turn Left
+  - first:
+      74: 7400050
+    second: Head turn Right
+  - first:
+      74: 7400052
+    second: left Hand Move
+  - first:
+      74: 7400054
+    second: Right Hand Move
+  - first:
+      74: 7400056
+    second: Cva Neutral
+  - first:
+      74: 7400058
+    second: Cva Right Arm Raise
+  - first:
+      74: 7400060
+    second: Cva Right Leg Raise
+  - first:
+      74: 7400062
+    second: Cva Left Arm Raise
+  - first:
+      74: 7400064
+    second: Cva Left Leg Raise
+  - first:
+      74: 7400066
+    second: Cva Seizure
+  - first:
+      74: 7400068
+    second: Kussmaul Breath
+  - first:
+      74: 7400070
+    second: Moderate Chest Pain
+  - first:
+      74: 7400072
+    second: severe chest Pain
+  - first:
+      74: 7400074
+    second: Mild Chest Pain
+  - first:
+      74: 7400076
+    second: Dead Chest Pain
+  - first:
+      74: 7400078
+    second: CVA Neutral
+  - first:
+      74: 7400080
+    second: CVA Right Arm Raise
+  - first:
+      74: 7400082
+    second: CVA Right Leg Raise
+  - first:
+      74: 7400084
+    second: CVA Left Arm Raise
+  - first:
+      74: 7400086
+    second: CVA Left Leg Raise
+  - first:
+      74: 7400088
+    second: CVA Seizure
+  - first:
+      74: 7400090
+    second: severe Chest Pain
+  - first:
+      74: 7400092
+    second: Moderate Ab Pain
+  - first:
+      74: 7400094
+    second: Severe Ab Pain
+  - first:
+      74: 7400096
+    second: NI Resp
+  - first:
+      74: 7400098
+    second: Ab Somnolence
+  - first:
+      74: 7400100
+    second: Dead Ab Pain
+  - first:
+      74: 7400102
+    second: Nausea And Vomiting
+  - first:
+      74: 7400104
+    second: Nausea And Vomiting Sitting Up
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Body
+  - first:
+      137: 13700002
+    second: Head
+  - first:
+      137: 13700004
+    second: Shirt1
+  - first:
+      137: 13700006
+    second: Torso_Arms_Head
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Coughing With Hands
+      takeName: 
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 413
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Defib
+      takeName: 
+      internalID: 0
+      firstFrame: 605
+      lastFrame: 620
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Unconscious
+      takeName: 
+      internalID: 0
+      firstFrame: 677
+      lastFrame: 792
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coughing While Conscious
+      takeName: 
+      internalID: 0
+      firstFrame: 888
+      lastFrame: 1280
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coughing While Unconscious
+      takeName: 
+      internalID: 0
+      firstFrame: 1307
+      lastFrame: 1647
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Recovery Position
+      takeName: 
+      internalID: 0
+      firstFrame: 1695
+      lastFrame: 1950
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: 
+      internalID: 0
+      firstFrame: 1997
+      lastFrame: 2080
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coughing With Right Hand
+      takeName: 
+      internalID: 0
+      firstFrame: 2120
+      lastFrame: 2396
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Scared And Crying
+      takeName: 
+      internalID: 0
+      firstFrame: 2440
+      lastFrame: 3943
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Oblivious
+      takeName: 
+      internalID: 0
+      firstFrame: 3976
+      lastFrame: 5450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: In Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 5473
+      lastFrame: 6990
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Grimacing In Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 6985
+      lastFrame: 8069
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skin Irritation
+      takeName: 
+      internalID: 0
+      firstFrame: 8088
+      lastFrame: 8563
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eye Rubbing
+      takeName: 
+      internalID: 0
+      firstFrame: 8695
+      lastFrame: 8891
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Coughing With Left Hand
+      takeName: 
+      internalID: 0
+      firstFrame: 8871
+      lastFrame: 9119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throat Irritation
+      takeName: 
+      internalID: 0
+      firstFrame: 9100
+      lastFrame: 9315
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Normal Breath
+      takeName: 
+      internalID: 0
+      firstFrame: 9422
+      lastFrame: 9572
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Mild Respiratory Distress
+      takeName: 
+      internalID: 0
+      firstFrame: 9582
+      lastFrame: 9712
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Moderate Respiratory Distress
+      takeName: 
+      internalID: 0
+      firstFrame: 9712
+      lastFrame: 9812
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Severe Respiratory Distress 001
+      takeName: 
+      internalID: 0
+      firstFrame: 9824
+      lastFrame: 9924
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Severe Respiratory Distress 002
+      takeName: 
+      internalID: 0
+      firstFrame: 9912
+      lastFrame: 9982
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Severe Respiratory Distress 003
+      takeName: 
+      internalID: 0
+      firstFrame: 9992
+      lastFrame: 10045
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Agonal Respiratory
+      takeName: 
+      internalID: 0
+      firstFrame: 10055
+      lastFrame: 10234
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Blink
+      takeName: 
+      internalID: 0
+      firstFrame: 10244
+      lastFrame: 10254
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Head Turn Left
+      takeName: 
+      internalID: 0
+      firstFrame: 10264
+      lastFrame: 10309
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Head turn Right
+      takeName: 
+      internalID: 0
+      firstFrame: 10319
+      lastFrame: 10364
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: left Hand Move
+      takeName: 
+      internalID: 0
+      firstFrame: 10374
+      lastFrame: 10399
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right Hand Move
+      takeName: 
+      internalID: 0
+      firstFrame: 10409
+      lastFrame: 10434
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Neutral
+      takeName: 
+      internalID: 0
+      firstFrame: 10503
+      lastFrame: 10583
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Right Arm Raise
+      takeName: 
+      internalID: 0
+      firstFrame: 10583
+      lastFrame: 10713
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Right Leg Raise
+      takeName: 
+      internalID: 0
+      firstFrame: 10713
+      lastFrame: 10842
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Left Arm Raise
+      takeName: 
+      internalID: 0
+      firstFrame: 10852
+      lastFrame: 10973
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Left Leg Raise
+      takeName: 
+      internalID: 0
+      firstFrame: 10983
+      lastFrame: 11113
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CVA Seizure
+      takeName: 
+      internalID: 0
+      firstFrame: 11110
+      lastFrame: 12510
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Kussmaul Breath
+      takeName: 
+      internalID: 0
+      firstFrame: 12510
+      lastFrame: 12520
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Moderate Chest Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 12776
+      lastFrame: 13396
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: severe Chest Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 13396
+      lastFrame: 14136
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Mild Chest Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 14136
+      lastFrame: 14736
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dead Chest Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 14736
+      lastFrame: 14795
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Moderate Ab Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 14525
+      lastFrame: 15525
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Severe Ab Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 15535
+      lastFrame: 16321
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: NI Resp
+      takeName: 
+      internalID: 0
+      firstFrame: 14372
+      lastFrame: 14483
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ab Somnolence
+      takeName: 
+      internalID: 0
+      firstFrame: 16321
+      lastFrame: 16872
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dead Ab Pain
+      takeName: 
+      internalID: 0
+      firstFrame: 16872
+      lastFrame: 16918
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Nausea And Vomiting
+      takeName: 
+      internalID: 0
+      firstFrame: 17036
+      lastFrame: 17410
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.4384109
+        functionName: OnBeginVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5175428
+        functionName: OnEndVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Nausea And Vomiting Sitting Up
+      takeName: 
+      internalID: 0
+      firstFrame: 17442
+      lastFrame: 18096
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.72231907
+        functionName: OnBeginVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.7502983
+        functionName: OnEndVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.82792836
+        functionName: OnBeginVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.86267644
+        functionName: OnEndVomit
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Pelvis_Bone001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Upper_Leg_Bone001
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Upper_Leg_Bone001
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Lower_Leg_Bone002
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Lower_Leg_Bone002
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Foot_Bone003
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Foot_Bone003
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_Bone002
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_Bone003
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_Bone004
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_Bone005
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Clavicle_Bone001
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Clavicle_Bone001
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Upper_Arm_Bone002
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Upper_Arm_Bone002
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Lower_Arm_Bone003
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Lower_Arm_Bone003
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hand_Bone004
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hand_Bone004
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Toe_Bone004
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Toe_Bone004
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Right_Eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_Bone001
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_Bone002
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_Bone003
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_Fing_Bone001
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_Fing_Bone002
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_Fing_Bone003
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Mid_Fing_Bone001
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Mid_Fing_Bone002
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Mid_Fing_Bone003
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ring_Fing_Bone001
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ring_Fing_Bone002
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ring_Fing_Bone003
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Little_Fing_Bone001
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Little_Fing_Bone002
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Little_Fing_Bone003
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb_Bone001
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb_Bone002
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb_Bone003
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index_Fing_Bone001
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index_Fing_Bone002
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index_Fing_Bone003
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Mid_Fing_Bone001
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Mid_Fing_Bone002
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Mid_Fing_Bone003
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring_Fing_Bone001
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring_Fing_Bone002
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring_Fing_Bone003
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Little_Fing_Bone001
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Little_Fing_Bone002
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Little_Fing_Bone003
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: AllAnimations2(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.393701, y: 0.393701, z: 0.393701}
+    - name: Head
+      parentName: AllAnimations2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Torso_Arms_Head
+      parentName: AllAnimations2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shirt1
+      parentName: AllAnimations2(Clone)
+      position: {x: -0, y: 1.0757318e-23, z: -0.000000001060523}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body
+      parentName: AllAnimations2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelvis_Bone001
+      parentName: AllAnimations2(Clone)
+      position: {x: 0, y: 2.4100442, z: 0.041980214}
+      rotation: {x: 0.003247205, y: 0.0032610225, z: -0.707949, w: 0.70624864}
+      scale: {x: 1.0000027, y: 1.000002, z: 0.99999964}
+    - name: L_Upper_Leg_Bone001
+      parentName: Pelvis_Bone001
+      position: {x: 0.17147343, y: -0.22566517, z: -0.038396303}
+      rotation: {x: 0.0011571618, y: -0.7075381, z: 0.70662636, w: 0.008228821}
+      scale: {x: 1.0000015, y: 1.0000035, z: 1.0000012}
+    - name: L_Lower_Leg_Bone002
+      parentName: L_Upper_Leg_Bone001
+      position: {x: -1.0346197, y: 0.0000014412878, z: 0.00000012111663}
+      rotation: {x: -0.017243175, y: 0.0023208112, z: -0.059947446, w: 0.99805}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000012}
+    - name: L_Foot_Bone003
+      parentName: L_Lower_Leg_Bone002
+      position: {x: -0.97995514, y: -0.00000019681453, z: 0.000000024223327}
+      rotation: {x: 0.072503544, y: 0.041208982, z: 0.5392304, w: 0.8380189}
+      scale: {x: 1.000001, y: 1.0000006, z: 1.0000004}
+    - name: L_Toe_Bone004
+      parentName: L_Foot_Bone003
+      position: {x: -0.32171512, y: 0.00000007266998, z: 0}
+      rotation: {x: -0.024897538, y: -0.097836055, z: -0.26596624, w: -0.95868146}
+      scale: {x: 1.0000007, y: 1.0000012, z: 1.0000007}
+    - name: L_Leg_End_Bone005
+      parentName: L_Toe_Bone004
+      position: {x: -0.23898734, y: -0.00000009689331, z: 0.00000021800993}
+      rotation: {x: -0.010623191, y: 0.026185198, z: -0.026815625, w: 0.99924093}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Upper_Leg_Bone001
+      parentName: Pelvis_Bone001
+      position: {x: 0.16822791, y: 0.22156775, z: -0.042441204}
+      rotation: {x: 0.0038964665, y: 0.7075244, z: 0.7066773, w: 0.00110758}
+      scale: {x: 1.0000014, y: 1.0000024, z: 1.0000015}
+    - name: R_Lower_Leg_Bone002
+      parentName: R_Upper_Leg_Bone001
+      position: {x: -1.032644, y: -0.0000014533996, z: 0.00000014533995}
+      rotation: {x: 0.017334485, y: 0.011407095, z: 0.069557734, w: 0.99736214}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: R_Foot_Bone003
+      parentName: R_Lower_Leg_Bone002
+      position: {x: -0.9643765, y: 0.0000001725912, z: 0.0000001695633}
+      rotation: {x: -0.05728586, y: 0.04261741, z: -0.52354914, w: 0.8489984}
+      scale: {x: 1.0000001, y: 0.9999995, z: 0.9999997}
+    - name: R_Toe_Bone004
+      parentName: R_Foot_Bone003
+      position: {x: -0.32373244, y: -0.000000033307074, z: 0.00000009689331}
+      rotation: {x: -0.019887915, y: 0.10089288, z: -0.28649905, w: 0.9525458}
+      scale: {x: 1.0000018, y: 0.9999993, z: 1.0000007}
+    - name: R_Leg_End_Bone005
+      parentName: R_Toe_Bone004
+      position: {x: -0.24262623, y: 0.000000024223327, z: 0.000000024223327}
+      rotation: {x: 0.0004959886, y: 0.00008855575, z: 0.008492064, w: 0.9999638}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_Bone002
+      parentName: Pelvis_Bone001
+      position: {x: -0.39711896, y: -0.000000092114874, z: -0.00000007872581}
+      rotation: {x: 0.0006858257, y: -0.013108239, z: -0.0036267329, w: 0.9999073}
+      scale: {x: 1.0000017, y: 1.0000012, z: 1.0000005}
+    - name: Spine_Bone003
+      parentName: Spine_Bone002
+      position: {x: -0.35794675, y: 0.000000003027916, z: 0}
+      rotation: {x: 0.0016116409, y: -0.03608135, z: 0.004052102, w: 0.99933934}
+      scale: {x: 1.0000029, y: 1.0000027, z: 1.0000004}
+    - name: L_Clavicle_Bone001
+      parentName: Spine_Bone003
+      position: {x: -0.30158275, y: -0.12087056, z: -0.01549089}
+      rotation: {x: -0.42373455, y: -0.52589643, z: 0.46827826, w: 0.5697346}
+      scale: {x: 0.9999993, y: 1.0000018, z: 0.9999994}
+    - name: L_Upper_Arm_Bone002
+      parentName: L_Clavicle_Bone001
+      position: {x: -0.27519283, y: -0.00000009689331, z: -0.00000019378662}
+      rotation: {x: -0.024543434, y: -0.0025117397, z: 0.084656894, w: 0.9961047}
+      scale: {x: 1.0000001, y: 1.0000037, z: 1.0000038}
+    - name: L_Lower_Arm_Bone003
+      parentName: L_Upper_Arm_Bone002
+      position: {x: -0.65806955, y: 0.0000002906799, z: -0.0000007751465}
+      rotation: {x: 0.017359944, y: 0.019222938, z: 0.057738565, w: 0.99799573}
+      scale: {x: 0.99999905, y: 1.0000012, z: 1.0000002}
+    - name: L_Hand_Bone004
+      parentName: L_Lower_Arm_Bone003
+      position: {x: -0.66776353, y: 0.0000001695633, z: 0.000001550293}
+      rotation: {x: 0.010570106, y: -0.03709138, z: -0.04606134, w: 0.9981938}
+      scale: {x: 1.0000018, y: 1.000002, z: 1.000001}
+    - name: L_Thumb_Bone001
+      parentName: L_Hand_Bone004
+      position: {x: -0.0902441, y: -0.047344588, z: -0.04984201}
+      rotation: {x: 0.036979508, y: -0.051146258, z: 0.4216282, w: 0.9045696}
+      scale: {x: 0.9999989, y: 1.0000019, z: 1.0000013}
+    - name: L_Thumb_Bone002
+      parentName: L_Thumb_Bone001
+      position: {x: -0.11080466, y: 0, z: -0.0000009204864}
+      rotation: {x: -0.06921122, y: 0.016506998, z: -0.03469535, w: 0.9968619}
+      scale: {x: 1.0000021, y: 1.0000008, z: 1.0000004}
+    - name: L_Thumb_Bone003
+      parentName: L_Thumb_Bone002
+      position: {x: -0.07967043, y: -0.00000038757324, z: 0.00000009689331}
+      rotation: {x: -0.001867681, y: -0.014326584, z: 0.0378731, w: 0.9991782}
+      scale: {x: 1, y: 1.0000018, z: 1.0000011}
+    - name: L_Thumb_End_Bone004
+      parentName: L_Thumb_Bone003
+      position: {x: -0.06412893, y: 0.00000009689331, z: 0.0000007266998}
+      rotation: {x: -0.0042896825, y: 0.03660313, z: -0.10895398, w: 0.99336344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Little_Fing_Bone001
+      parentName: L_Hand_Bone004
+      position: {x: -0.19000825, y: 0.06661977, z: -0.012471138}
+      rotation: {x: 0.008130317, y: 0.01906486, z: -0.014234097, w: 0.99968386}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000014}
+    - name: L_Little_Fing_Bone002
+      parentName: L_Little_Fing_Bone001
+      position: {x: -0.075545, y: 0.0000013565063, z: -0.00000041179658}
+      rotation: {x: 0.01275797, y: -0.03846302, z: 0.014734913, w: 0.9990699}
+      scale: {x: 1.0000002, y: 1, z: 0.9999997}
+    - name: L_Little_Fing_Bone003
+      parentName: L_Little_Fing_Bone002
+      position: {x: -0.04217824, y: 0.00000009689331, z: 0.0000007266998}
+      rotation: {x: -0.026256502, y: 0.034635678, z: -0.012206927, w: 0.9989805}
+      scale: {x: 0.9999999, y: 0.9999995, z: 0.99999964}
+    - name: L_Little_Fing_End_Bone004
+      parentName: L_Little_Fing_Bone003
+      position: {x: -0.040094934, y: 0.00000019378662, z: -0.000001114273}
+      rotation: {x: -0.010296401, y: 0.11074886, z: 0.0057400437, w: 0.9937785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Index_Fing_Bone001
+      parentName: L_Hand_Bone004
+      position: {x: -0.22040659, y: -0.089382134, z: -0.011660625}
+      rotation: {x: -0.0044968673, y: 0.021587415, z: 0.017107597, w: 0.9996105}
+      scale: {x: 0.9999999, y: 1, z: 1.0000004}
+    - name: L_Index_Fing_Bone002
+      parentName: L_Index_Fing_Bone001
+      position: {x: -0.09088912, y: 0.00000009689331, z: 0.00000025434494}
+      rotation: {x: 0.003044956, y: -0.02724941, z: 0.020953914, w: 0.9994044}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000004}
+    - name: L_Index_Fing_Bone003
+      parentName: L_Index_Fing_Bone002
+      position: {x: -0.06248349, y: 0.00000019378662, z: -0.00000019378662}
+      rotation: {x: -0.011427683, y: -0.011142497, z: -0.034816723, w: 0.99926627}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000004}
+    - name: L_Index_Fing_End_Bone004
+      parentName: L_Index_Fing_Bone003
+      position: {x: -0.05897673, y: 0.00000038757324, z: 0.00000014533995}
+      rotation: {x: -0.0012718003, y: 0.05964362, z: 0.023897659, w: 0.99793285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ring_Fing_Bone001
+      parentName: L_Hand_Bone004
+      position: {x: -0.21559206, y: 0.015504576, z: 0.0025683024}
+      rotation: {x: -0.007587454, y: 0.013350341, z: -0.014603762, w: 0.9997754}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000005}
+    - name: L_Ring_Fing_Bone002
+      parentName: L_Ring_Fing_Bone001
+      position: {x: -0.07435912, y: -0.0000005813598, z: -0.0000004844665}
+      rotation: {x: 0.03954408, y: -0.026697593, z: 0.03145244, w: 0.99836576}
+      scale: {x: 1.0000008, y: 1.000001, z: 1.0000006}
+    - name: L_Ring_Fing_Bone003
+      parentName: L_Ring_Fing_Bone002
+      position: {x: -0.06653712, y: -0.00000009689331, z: 0.00000019378662}
+      rotation: {x: -0.012691975, y: 0.031862322, z: 0.02416487, w: 0.9991195}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: L_Ring_Fing_End_Bone004
+      parentName: L_Ring_Fing_Bone003
+      position: {x: -0.058473658, y: -0.00000009689331, z: -0.00000043601986}
+      rotation: {x: -0.01399155, y: 0.11925325, z: 0.02585444, w: 0.9924286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Mid_Fing_Bone001
+      parentName: L_Hand_Bone004
+      position: {x: -0.22877266, y: -0.031347312, z: 0.0041025113}
+      rotation: {x: -0.007362189, y: 0.036939066, z: 0.029827839, w: 0.99884516}
+      scale: {x: 0.9999995, y: 0.9999995, z: 0.99999934}
+    - name: L_Mid_Fing_Bone002
+      parentName: L_Mid_Fing_Bone001
+      position: {x: -0.08799482, y: -0.0000002906799, z: -0.0000002906799}
+      rotation: {x: 0.0033207189, y: -0.038623765, z: -0.010747975, w: 0.9991905}
+      scale: {x: 1.0000007, y: 0.9999999, z: 1.0000006}
+    - name: L_Mid_Fing_Bone003
+      parentName: L_Mid_Fing_Bone002
+      position: {x: -0.069123976, y: -0.00000009689331, z: 0.0000007751465}
+      rotation: {x: -0.0016724637, y: 0.029041745, z: 0.02775386, w: 0.9991914}
+      scale: {x: 1, y: 1.0000007, z: 1.000001}
+    - name: L_Mid_Fing_End_Bone004
+      parentName: L_Mid_Fing_Bone003
+      position: {x: -0.06320273, y: -0.00000019378662, z: -0.000001550293}
+      rotation: {x: -0.0010343331, y: 0.11475272, z: 0.008369307, w: 0.9933583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Clavicle_Bone001
+      parentName: Spine_Bone003
+      position: {x: -0.2965906, y: 0.12238848, z: -0.013554187}
+      rotation: {x: -0.42026067, y: 0.5306526, z: 0.465577, w: -0.5701114}
+      scale: {x: 1.0000056, y: 1.0000048, z: 1.0000024}
+    - name: R_Upper_Arm_Bone002
+      parentName: R_Clavicle_Bone001
+      position: {x: -0.27836105, y: 0, z: 0.00000038757324}
+      rotation: {x: 0.032566182, y: -0.0046295216, z: -0.07045163, w: 0.9969727}
+      scale: {x: 0.9999998, y: 1, z: 1.0000017}
+    - name: R_Lower_Arm_Bone003
+      parentName: R_Upper_Arm_Bone002
+      position: {x: -0.61783105, y: -0.0000002664566, z: -0.00000019378662}
+      rotation: {x: -0.016508669, y: 0.022266125, z: -0.055492073, w: 0.99807435}
+      scale: {x: 1.0000027, y: 1.000002, z: 1.0000013}
+    - name: R_Hand_Bone004
+      parentName: R_Lower_Arm_Bone003
+      position: {x: -0.67230606, y: 0.000000030279157, z: 0.00000038757324}
+      rotation: {x: -0.012524556, y: -0.029316567, z: 0.007075426, w: 0.99946666}
+      scale: {x: 1.0000012, y: 1.0000019, z: 1.0000004}
+    - name: R_Little_Fing_Bone001
+      parentName: R_Hand_Bone004
+      position: {x: -0.19167842, y: -0.070533, z: -0.018893033}
+      rotation: {x: -0.011685881, y: 0.014292017, z: 0.026697055, w: 0.9994731}
+      scale: {x: 1.0000021, y: 1.0000006, z: 1.0000014}
+    - name: R_Little_Fing_Bone002
+      parentName: R_Little_Fing_Bone001
+      position: {x: -0.07282452, y: -0.0000006782532, z: 0.00000009689331}
+      rotation: {x: -0.007159862, y: -0.03878929, z: -0.014587216, w: 0.99911535}
+      scale: {x: 1.0000014, y: 1.0000018, z: 1.000001}
+    - name: R_Little_Fing_Bone003
+      parentName: R_Little_Fing_Bone002
+      position: {x: -0.03970223, y: -0.00000019378662, z: -0.00000009689331}
+      rotation: {x: 0.024427215, y: 0.008101358, z: -0.00995514, w: 0.99961925}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000007}
+    - name: R_Little_Fing_End_Bone004
+      parentName: R_Little_Fing_Bone003
+      position: {x: -0.043131668, y: 0, z: -0.0000006782532}
+      rotation: {x: 0.0047512227, y: 0.049109045, z: 0.043415967, w: 0.9978381}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Thumb_Bone001
+      parentName: R_Hand_Bone004
+      position: {x: -0.058853384, y: 0.07323782, z: -0.03742659}
+      rotation: {x: -0.012817515, y: -0.07115064, z: -0.39931074, w: 0.9139608}
+      scale: {x: 1.0000018, y: 0.99999976, z: 1.0000005}
+    - name: R_Thumb_Bone002
+      parentName: R_Thumb_Bone001
+      position: {x: -0.10952781, y: -0.00000009689331, z: -0.000000048446655}
+      rotation: {x: -0.030325904, y: 0.00040791163, z: 0.040740494, w: 0.9987094}
+      scale: {x: 1.0000006, y: 1.000002, z: 1.0000011}
+    - name: R_Thumb_Bone003
+      parentName: R_Thumb_Bone002
+      position: {x: -0.08512658, y: 0.0000005329132, z: -0.00000008478165}
+      rotation: {x: 0.06280747, y: 0.03767192, z: -0.015865209, w: 0.9971882}
+      scale: {x: 1.0000017, y: 1.0000015, z: 1.0000005}
+    - name: R_Thumb_End_Bone004
+      parentName: R_Thumb_Bone003
+      position: {x: -0.060977478, y: -0.00000019378662, z: -0.00000003633499}
+      rotation: {x: 0.005420016, y: -0.17561539, z: 0.027908886, w: 0.98404825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Index_Fing_Bone001
+      parentName: R_Hand_Bone004
+      position: {x: -0.22578476, y: 0.079257414, z: -0.012203809}
+      rotation: {x: -0.003739574, y: -0.00095151714, z: -0.006790538, w: 0.99996954}
+      scale: {x: 1.0000033, y: 1.0000024, z: 1.0000013}
+    - name: R_Index_Fing_Bone002
+      parentName: R_Index_Fing_Bone001
+      position: {x: -0.089992955, y: 0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0.002479069, y: -0.020952428, z: -0.009833172, w: 0.99972904}
+      scale: {x: 1.000001, y: 1.0000014, z: 1.0000008}
+    - name: R_Index_Fing_Bone003
+      parentName: R_Index_Fing_Bone002
+      position: {x: -0.0653555, y: 0.00000009689331, z: -0.00000014533995}
+      rotation: {x: 0.00476694, y: -0.001980247, z: 0.016522398, w: 0.9998502}
+      scale: {x: 1.0000026, y: 1.0000011, z: 1.000001}
+    - name: R_Index_Fing_End_Bone004
+      parentName: R_Index_Fing_Bone003
+      position: {x: -0.05650217, y: 0.00000009689331, z: 0.00000009689331}
+      rotation: {x: 0.003199205, y: -0.07684245, z: 0.0033760972, w: 0.9970324}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ring_Fing_Bone001
+      parentName: R_Hand_Bone004
+      position: {x: -0.22040641, y: -0.019435925, z: -0.0036074347}
+      rotation: {x: 0.004134905, y: 0.0087302765, z: 0.028264627, w: 0.99955386}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000012}
+    - name: R_Ring_Fing_Bone002
+      parentName: R_Ring_Fing_Bone001
+      position: {x: -0.072373874, y: 0.0000004844665, z: 0.0000005329132}
+      rotation: {x: -0.010407609, y: -0.01301209, z: -0.0111700455, w: 0.9997988}
+      scale: {x: 1.0000024, y: 1.0000025, z: 1.0000013}
+    - name: R_Ring_Fing_Bone003
+      parentName: R_Ring_Fing_Bone002
+      position: {x: -0.065338254, y: -0.0000002906799, z: -0.0000002301216}
+      rotation: {x: -0.0031637747, y: -0.013223362, z: -0.026720911, w: 0.9995505}
+      scale: {x: 1.0000014, y: 1.000001, z: 1.0000006}
+    - name: R_Ring_Fing_End_Bone004
+      parentName: R_Ring_Fing_Bone003
+      position: {x: -0.0575117, y: 0.00000009689331, z: -0.00000009689331}
+      rotation: {x: 0.00090683927, y: -0.0189137, z: 0.060070913, w: 0.9980145}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Mid_Fing_Bone001
+      parentName: R_Hand_Bone004
+      position: {x: -0.23391178, y: 0.02527927, z: -0.00000019378662}
+      rotation: {x: -0.0024630039, y: 0.035518914, z: 0.003971171, w: 0.99935806}
+      scale: {x: 1.0000021, y: 1.0000012, z: 1.0000014}
+    - name: R_Mid_Fing_Bone002
+      parentName: R_Mid_Fing_Bone001
+      position: {x: -0.08537987, y: -0.00000009689331, z: 0.00000024223326}
+      rotation: {x: -0.0025468778, y: -0.040122453, z: 0.0046089245, w: 0.999181}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000006}
+    - name: R_Mid_Fing_Bone003
+      parentName: R_Mid_Fing_Bone002
+      position: {x: -0.06701102, y: -0.00000014533995, z: 0.000000060558314}
+      rotation: {x: 0.0006282145, y: 0.024087433, z: -0.030520357, w: 0.9992437}
+      scale: {x: 1.0000005, y: 0.99999976, z: 1.0000001}
+    - name: R_Mid_Fing_End_Bone004
+      parentName: R_Mid_Fing_Bone003
+      position: {x: -0.061166223, y: 0.000000048446655, z: -0.0000004844665}
+      rotation: {x: -0.0007645799, y: -0.0037339614, z: 0.00594694, w: 0.9999751}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_Bone004
+      parentName: Spine_Bone003
+      position: {x: -0.44253287, y: 3.784895e-10, z: -0.0000002664566}
+      rotation: {x: -0.00709146, y: 0.091054164, z: 0.007173279, w: 0.99579483}
+      scale: {x: 1.0000007, y: 1.0000021, z: 1.0000017}
+    - name: Head_Bone005
+      parentName: Neck_Bone004
+      position: {x: -0.2370615, y: 0.0000005995273, z: 0.00000019378662}
+      rotation: {x: -0.009618245, y: 0.03357283, z: -0.010463683, w: 0.9993352}
+      scale: {x: 1.0000018, y: 1.0000012, z: 1.0000001}
+    - name: Head_End_Bone006
+      parentName: Head_Bone005
+      position: {x: -0.46317598, y: 0.000000027251241, z: 0}
+      rotation: {x: -0.06614104, y: 0.2615158, z: -0.0031217202, w: 0.9629253}
+      scale: {x: 1, y: 1.000001, z: 1}
+    - name: Right_Eye
+      parentName: Head_Bone005
+      position: {x: -0.1954396, y: 0.065797694, z: 0.21417375}
+      rotation: {x: 0.5285395, y: 0.54806954, z: -0.45253354, w: -0.4641974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Eye
+      parentName: Head_Bone005
+      position: {x: -0.1971395, y: -0.089222185, z: 0.21252346}
+      rotation: {x: 0.5285395, y: 0.54806954, z: -0.45253354, w: -0.4641974}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: chracter_objects_shared
+  assetBundleVariant: 
