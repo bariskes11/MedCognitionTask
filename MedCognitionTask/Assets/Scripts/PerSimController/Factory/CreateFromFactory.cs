@@ -11,11 +11,11 @@ public class CreateFromFactory : MonoBehaviour
     }
     public void CreateUIItem()
     {
-        this.CreateFactory(ResourceItem.UIItem);
+        this.CreateFactory(ResourceItem.UIGenderItem);
     }
     private void CreateFactory(ResourceItem name)
     {
-        UIFactory rslt = FactoryGenerator<UIFactory>.CreateObject(name.ToString());
+        UIFactory rslt = FactoryGenerator<UIFactory>.CreateObject(name);
         rslt.CreateUI();
     }
 

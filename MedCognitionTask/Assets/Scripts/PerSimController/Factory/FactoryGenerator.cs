@@ -10,9 +10,9 @@ public static class FactoryGenerator<T> where T : class
 {
 
     // Name of prefab or game object
-    private const  ResourceItem NAME = ResourceItem.UIItem;
+    private const  ResourceItem NAME = ResourceItem.UIGenderItem;
     // dictionary for keeping created factories and find by name when its needed
-    private static Dictionary<string, T> factoryTypesByName;
+    private static Dictionary<ResourceItem, T> factoryTypesByName;
     // check if system started by a simple null check
     private static bool isinitialized = factoryTypesByName != null;
     public static void InitializeFactoryGenerator()
@@ -21,27 +21,25 @@ public static class FactoryGenerator<T> where T : class
         // if started no need to work code again
         if (isinitialized) { return; }
         // create instance of dictionary to add
-        factoryTypesByName = new Dictionary<string, T>();
+        factoryTypesByName = new Dictionary<ResourceItem, T>();
         // get all the factories which arent abstract and child of our main class provided with (T)  
         // this line uses System.Linq
         var factoryTypes = Assembly.GetAssembly(typeof(T)).GetTypes().Where(x => x.IsClass && !x.IsAbstract && x.IsSubclassOf((typeof(T))));
-
         foreach (var type in factoryTypes)
         {
             //Creates instance of subclass
             var factory = Activator.CreateInstance(type) as T;
-            // get Name property of class as string 
-            var rslt = factory.GetType().GetProperty(NAME.ToString()).GetValue(factory) as string;
+            Debug.Log($"result {factory}");
             // add to Dictionary
-            factoryTypesByName.Add(rslt, factory);
+            factoryTypesByName.Add(NAME, factory);
         }
     }
     /// 
     /// calls from factory by PrefabName
     ///
-    public static T CreateObject(string Code)
+    public static T CreateObject(ResourceItem resourceitem)
     {
         // get first macth of class and return as class
-        return factoryTypesByName.Where(v => v.Key == Code).Select(x => x.Value).FirstOrDefault();
+        return factoryTypesByName.Where(v => v.Key == resourceitem).Select(x => x.Value).FirstOrDefault();
     }
 }
