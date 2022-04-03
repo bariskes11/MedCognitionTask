@@ -40,7 +40,7 @@ public class NetworkManager : MonoBehaviour
     {
         try
         {
-            tcpListener = new TcpListener(IPAddress.Any, 8052);
+            tcpListener = new TcpListener(IPAddress.Parse( "192.168.1.131"), 8052);
             tcpListener.Start();
             Debug.Log("Server is listening");
             Byte[] bytes = new Byte[1024];
