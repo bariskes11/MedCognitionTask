@@ -6,10 +6,10 @@ using static PublicCommons;
 
 public static class EventManager
 {
-    public static PatientGenderInteraction OnSelectedGender = new PatientGenderInteraction();
+    public static PanelInteraction OnSelectedItem = new PanelInteraction();
 }
 
-public class PatientGenderInteraction : UnityEvent<PatientGender, PanelType>
+public class PanelInteraction : UnityEvent<int, PanelType>
 {
 
 }

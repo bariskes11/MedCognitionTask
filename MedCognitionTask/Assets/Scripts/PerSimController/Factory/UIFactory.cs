@@ -13,8 +13,8 @@ public abstract class UIFactory : MonoBehaviour
         GameObject gmcreated = Instantiate(gmObj);
         if (parent != null)
         {
-            gmcreated.transform.SetParent(parent);
-            gmcreated.transform.localScale = Vector3.one;
+            gmcreated.transform.parent = parent;
+            gmcreated.transform.localScale=Vector3.one;
         }
 
         gmObj.transform.position = Vector3.zero;

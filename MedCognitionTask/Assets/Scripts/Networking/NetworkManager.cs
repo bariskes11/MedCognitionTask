@@ -1,34 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
+using Photon.Realtime;
 using TMPro;
-using System.Net.Sockets;
-using System.Threading;
-using System.Net;
-using System;
-using System.Text;
 
-public class NetworkManager : MonoBehaviour
+public class NetworkManager : MonoBehaviourPunCallbacks
 {
     #region Unity Fields
     [SerializeField]
     TextMeshProUGUI txtStatus;
     #endregion
 
-    private TcpListener tcpListener;
-    private Thread tcpListenerThread;
-    private TcpClient connectedTcpClient;
-
-    void Start()
+    private void Awake()
     {
-        tcpListenerThread = new Thread(new ThreadStart(ListenForIncomingRequests));
-        tcpListenerThread.IsBackground = true;
-        tcpListenerThread.Start();
+        PhotonNetwork.ConnectUsingSettings();
+        this.txtStatus.text = "Waiting For Local Connection.....";
     }
-
-    void Update()
+    #region Photon Override Methods
+    public override void OnConnectedToMaster()
     {
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log($"Sending message");
@@ -81,30 +73,33 @@ public class NetworkManager : MonoBehaviour
         }
 
         Debug.Log("Exiting...");
+=======
+        PhotonNetwork.JoinLobby(TypedLobby.Default);
+        this.txtStatus.text = "Connected To Internet";
     }
-
-    private void SendMessage()
+    public override void OnDisconnected(DisconnectCause cause)
     {
-        if (connectedTcpClient == null)
-        {
-            return;
-        }
-
-        try
-        {
-            NetworkStream stream = connectedTcpClient.GetStream();
-            if (stream.CanWrite)
-            {
-                string serverMessage = "This is a message from your server.";
-                byte[] serverMessageAsByteArray = Encoding.ASCII.GetBytes(serverMessage);
-                stream.Write(serverMessageAsByteArray, 0, serverMessageAsByteArray.Length);
-                Debug.Log("Server sent his message - should be received by client");
-            }
-            
-        }
-        catch (SocketException socketException)
-        {
-            Debug.Log("Socket exception: " + socketException);
-        }
+        this.txtStatus.text = "Disconnected from Network";
+>>>>>>> parent of ea9d336 (Networking Changes and improvements.)
     }
+    public override void OnJoinedLobby()
+    {
+        this.txtStatus.text = "Joined Lobby";
+        JoinOrCreateRoom();
+    }
+    public override void OnJoinedRoom()
+    {
+        this.txtStatus.color = Color.green;
+        this.txtStatus.text = "Connection Established..";
+    }
+    #endregion
+    #region Private Methods
+    void JoinOrCreateRoom()
+    {
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers = 2;
+        // there will always be one room
+        PhotonNetwork.JoinOrCreateRoom(PublicCommons.ROOMNAME, roomOptions, TypedLobby.Default);
+    }
+    #endregion
 }
