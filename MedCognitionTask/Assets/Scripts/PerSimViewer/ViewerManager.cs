@@ -31,29 +31,25 @@ public class ViewerManager : MonoBehaviour
         EventManager.OnClientGenderSet.AddListener(GenderSet);
         EventManager.OnClinicIssueChange.AddListener(ClinicIssueSet);
     }
-    //[ContextMenu("Create Man")]
-    //void TestGender()
-    //{
-    //    GenderSet(PatientGender.Male);
-    //}
     #endregion
     #region Private Methods
     public void GenderSet(PatientGender gender)
     {
-       connectingCanvas.SetActive(false);
+        connectingCanvas.SetActive(false);
         Debug.Log($" Event Has Been Called for Gender {gender}");
         if (this.spawnPoint.GetComponentInChildren<IPatient>() != null) // destrot previus patient
         {
             Destroy(this.spawnPoint.GetComponentInChildren<IPatient>().Transform.gameObject);
         }
         var patient = patients.Where(x => x.GetComponent<IPatient>().PatientGender == gender).FirstOrDefault();
-        
+
         currentPatient = Instantiate(patient.gameObject, spawnPoint);
         currentPatient.transform.position = Vector3.zero;
-        
+
     }
     void ClinicIssueSet(PatientClinicIssueType clinicIssue)
     {
+        Debug.Log($" Event Has Been Called for clinic Issue {clinicIssue}");
         if (clinicIssue == PatientClinicIssueType.None) { return; }
         currentPatient.GetComponent<IPatient>().SetAnimation(clinicIssue);
     }

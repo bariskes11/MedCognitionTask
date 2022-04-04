@@ -13,4 +13,7 @@ public class DataHelper
     {
         return (PatientClinicIssueType)System.Enum.Parse(typeof(PatientClinicIssueType), val);
     }
+
+    
+
 }

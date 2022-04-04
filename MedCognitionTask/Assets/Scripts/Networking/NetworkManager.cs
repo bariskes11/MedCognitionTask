@@ -42,10 +42,10 @@ public class NetworkManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SelectedPatient(PatientGender.Female, PatientClinicIssueType.None);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    SelectedPatient(PatientGender.Female, PatientClinicIssueType.None);
+        //}
     }
     #endregion
 

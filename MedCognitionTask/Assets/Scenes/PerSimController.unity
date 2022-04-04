@@ -402,9 +402,9 @@ GameObject:
   - component: {fileID: 350718803}
   - component: {fileID: 350718806}
   m_Layer: 5
-  m_Name: Content
+  m_Name: GenderContent
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -498,12 +498,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 350718801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21736da8d2ff34743aeef80141fd8042, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a71e8c98ad888a4db6d2bbe5a0bc2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   txtHeader: {fileID: 970021982}
-  panelUIInfo: {fileID: 11400000, guid: 276c9293ae47a5f498394b304c5033d0, type: 2}
-  parentTransform: {fileID: 350718802}
+  genderPanelData: {fileID: 11400000, guid: 8c2a896597959eb448291334f83e09d8, type: 2}
 --- !u!1 &576566520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,9 +1658,9 @@ GameObject:
   - component: {fileID: 1760663701}
   - component: {fileID: 1760663700}
   m_Layer: 5
-  m_Name: Content
+  m_Name: ClinicIssueContent
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1699,6 +1698,7 @@ MonoBehaviour:
   txtHeader: {fileID: 1361232719}
   panelUIInfo: {fileID: 11400000, guid: 8bddcaf808220394f8e0bd960b722304, type: 2}
   parentTransform: {fileID: 1760663699}
+  uiObject: {fileID: 0}
 --- !u!114 &1760663701
 MonoBehaviour:
   m_ObjectHideFlags: 0

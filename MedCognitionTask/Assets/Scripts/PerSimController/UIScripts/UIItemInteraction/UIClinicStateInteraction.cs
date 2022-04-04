@@ -5,15 +5,12 @@ using static PublicCommons;
 
 public class UIClinicStateInteraction : ItemInfo
 {
-    protected override void Start()
-    {
-        base.Start();
-        
-    }
+    
+    #region Protected Methods
     protected override void ItemSelected()
     {
         base.ItemSelected();
-        EventManager.OnSelectedItem.Invoke(PatientGender.Male, PatientClinicIssueType.None);
-
+        EventManager.OnSelectedItem.Invoke(this.patientGender,this.patientClinicIssue);
     }
+    #endregion
 }

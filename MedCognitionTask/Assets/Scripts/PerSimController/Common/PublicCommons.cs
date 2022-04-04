@@ -13,20 +13,24 @@ public static class PublicCommons
         UIClinicalStateItem
     }
     public enum PanelType
-    { 
-    SelectGenderPanel,
-    SelectClinicStatePanel
+    {
+        SelectGenderPanel,
+        SelectClinicStatePanel
     }
     public enum PatientGender
-    { 
-    Male,
-    Female,
+    {
+        None,
+        Male,
+        Female,
     }
 
     public enum PatientClinicIssueType
-    { 
-    None,
-    One,
-    Two,
+    {
+        None,
+        ModerateRespiratoryDistress,
+        SevereRespiratoryDistressOne,
+        ChestPainThree,
+        SevereRespiratoryDistessTwo,
+        CoughtingWithHands,
     }
 }

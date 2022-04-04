@@ -14,7 +14,7 @@ public class UIGenderInteraction : ItemInfo
     protected override void ItemSelected()
     {
         base.ItemSelected();
-        if (this.currentIndex == 0)
+        if (this.currentIndex == 1)
             gender = PatientGender.Male;
         else
             gender = PatientGender.Female;

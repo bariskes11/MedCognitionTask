@@ -9,11 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 588667ff229e32f4ca6eab18c0428a42, type: 3}
-  m_Name: SelectGenderPanel
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 0}
+  m_Name: GenderPanel
+  m_EditorClassIdentifier: Assembly-CSharp::GenderPanelData
   PanelType: 0
-  PanelHeader: Select a Patient
-  PanelItemList:
-  - Adult Male
-  - Adult Female
+  PanelHeader: Selecte A Patient
+  GenderPanelItems:
+  - ItemIndex: 1
+    GenderText: Adult Male
+    gender: 1
+  - ItemIndex: 2
+    GenderText: Adult Female
+    gender: 2

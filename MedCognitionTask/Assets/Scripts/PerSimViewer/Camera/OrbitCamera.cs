@@ -41,11 +41,10 @@ public class OrbitCamera : MonoBehaviour
         this.SetZoomInOut();
         if (!Input.GetMouseButton(0)) { return; }
         this.OrbitAction();
-        
     }
     private void SetZoomInOut()
     {
-        fov += Input.GetAxis("Mouse ScrollWheel") * scroolSensivity;
+        fov -= Input.GetAxis("Mouse ScrollWheel") * scroolSensivity;
         fov = Mathf.Clamp(fov, minFov, maxFov);
         cam.fieldOfView = fov;
     }
