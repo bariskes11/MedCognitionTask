@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using static PublicCommons;
-
 public class ViewerManager : MonoBehaviour
 {
     #region Unity Fields
@@ -11,42 +11,31 @@ public class ViewerManager : MonoBehaviour
     GameObject connectingCanvas;
     [SerializeField]
     List<Patient> patients;
-    #endregion
-    #region Fields
-    bool isConnected;
+    [SerializeField]
+    Transform spawnPoint;
     #endregion
 
     #region Unity Methods
     private void Start()
     {
-        
+        EventManager.OnClientGenderSet.AddListener(GenderSet);
     }
     #endregion
-
     #region Private Methods
-    void ListenEventsOnServer(int index, PanelType panelType)
+    void GenderSet(PatientGender gender)
     {
-
-        Debug.Log($" Event Has Been Called {index} {panelType}");
-        if (panelType == PanelType.SelectGenderPanel)
+#if UNITY_EDITOR
+        if (patients == null)
         {
-            GameObject gmobj = Instantiate(patients[index].gameObject);
-            gmobj.transform.position = Vector3.zero;
+            Debug.Log($"Patiens Aren't set!!");
         }
+#endif
+        var patient = patients.Where(x => x.GetComponent<IPatient>().PatientGender == gender).FirstOrDefault();
+        Debug.Log($" Event Has Been Called for Gender {gender}");
+        GameObject gmobj = Instantiate(patient.gameObject,spawnPoint);
+        gmobj.transform.position = Vector3.zero;
+        connectingCanvas.SetActive(false);
     }
-    void TryToJoinRoom()
-    {
-        StartCoroutine(TryToJoin());
-    }
-    IEnumerator TryToJoin()
-    {
-        while (!isConnected)
-        {
 
-         
-            yield return new WaitForSeconds(1F);
-        }
-
-    }
     #endregion
 }

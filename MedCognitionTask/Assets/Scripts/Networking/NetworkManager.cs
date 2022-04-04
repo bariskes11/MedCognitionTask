@@ -8,6 +8,9 @@ using System.Threading;
 using System.Net;
 using System;
 using System.Text;
+using static PublicCommons;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 
 public class NetworkManager : MonoBehaviour
 {
@@ -17,30 +20,30 @@ public class NetworkManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI txtStatus;
     #endregion
-
-    private TcpListener tcpListener;
-    private Thread tcpListenerThread;
-    private TcpClient connectedTcpClient;
-
+    #region Fields
+    TcpListener tcpListener;
+    Thread tcpListenerThread;
+    TcpClient connectedTcpClient;
+    #endregion
+    #region Unity Methods
     void Start()
     {
         tcpListenerThread = new Thread(new ThreadStart(ListenForIncomingRequests));
         tcpListenerThread.IsBackground = true;
         tcpListenerThread.Start();
+        EventManager.OnSelectedItem.AddListener(SelectedPatient);
     }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log($"Sending message");
-            
-            SendMessage();
+            SelectedPatient(PatientGender.Female, PatientClinicIssueType.None);
         }
-        
     }
+    #endregion
 
-    private void ListenForIncomingRequests()
+    #region Private Methods
+    void ListenForIncomingRequests()
     {
         try
         {
@@ -73,29 +76,49 @@ public class NetworkManager : MonoBehaviour
 
         Debug.Log("Exiting...");
     }
-
-    private void SendMessage()
+    void SelectedPatient(PatientGender gender, PatientClinicIssueType clinicIssueType)
     {
         if (connectedTcpClient == null)
         {
             return;
         }
-
         try
         {
             NetworkStream stream = connectedTcpClient.GetStream();
             if (stream.CanWrite)
             {
-                string serverMessage = "This is a message from your server.";
-                byte[] serverMessageAsByteArray = Encoding.ASCII.GetBytes(serverMessage);
-                stream.Write(serverMessageAsByteArray, 0, serverMessageAsByteArray.Length);
-                Debug.Log("Server sent his message - should be received by client");
+                SendData(stream, $"{gender}&{clinicIssueType}");
             }
-            
         }
         catch (SocketException socketException)
         {
             Debug.Log("Socket exception: " + socketException);
         }
     }
+    void SelectedPatientClinicIssue(PatientGender gender, PatientClinicIssueType clinicIssue)
+    {
+        if (connectedTcpClient == null)
+        {
+            return;
+        }
+        try
+        {
+            NetworkStream stream = connectedTcpClient.GetStream();
+            if (stream.CanWrite)
+            {
+                SendData(stream,$"{gender}&{clinicIssue}");
+            }
+        }
+        catch (SocketException socketException)
+        {
+            Debug.Log("Socket exception: " + socketException);
+        }
+    }
+    private static void SendData(NetworkStream stream, string r)
+    {
+        byte[] serverMessageAsByteArray = Encoding.ASCII.GetBytes(r);
+        stream.Write(serverMessageAsByteArray, 0, serverMessageAsByteArray.Length);
+        Debug.Log("Server sent his message - should be received by client");
+    }
+    #endregion
 }

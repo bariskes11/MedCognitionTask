@@ -5,7 +5,7 @@ using static PublicCommons;
 
 public interface IPatient 
 {
-    PatientGender patientGender { get; }
+    PatientGender PatientGender { get; }
     Transform Transform { get; }
     Animator Animator { get; }
 }

@@ -18,6 +18,7 @@ public class UIGenderInteraction : ItemInfo
             gender = PatientGender.Male;
         else
             gender = PatientGender.Female;
-        EventManager.OnSelectedGender.Invoke(gender, PanelType.SelectGenderPanel);
+        
+        EventManager.OnSelectedItem.Invoke(gender, PatientClinicIssueType.None);
     }
 }

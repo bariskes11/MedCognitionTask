@@ -22,4 +22,11 @@ public static class PublicCommons
     Male,
     Female,
     }
+
+    public enum PatientClinicIssueType
+    { 
+    None,
+    One,
+    Two,
+    }
 }

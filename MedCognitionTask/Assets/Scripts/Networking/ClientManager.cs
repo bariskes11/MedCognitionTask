@@ -14,17 +14,18 @@ public class ClientManager : MonoBehaviour
     MasterPCIP masterPCIP;
     #endregion
 
-
     #region Fields
+    private DataHelper datahelper = new DataHelper();
     private TcpClient socketConnection;
     private Thread clientReceiveThread;
     #endregion
+    #region Unity Methods
     void Start()
     {
         ConnectToTcpServer();
     }
-    // Update is called once per frame
-
+    #endregion
+    #region Private Methods
     /// <summary>   
     /// Setup socket connection.    
     /// </summary>  
@@ -44,11 +45,11 @@ public class ClientManager : MonoBehaviour
     /// <summary>   
     /// Runs in background clientReceiveThread; Listens for incoming data.  
     /// </summary>     
+    /// 
     private void ListenForData()
     {
         try
         {
-            
             socketConnection = new TcpClient(masterPCIP.MasterIp, 8074);
             Byte[] bytes = new Byte[512];
             while (true)
@@ -62,8 +63,11 @@ public class ClientManager : MonoBehaviour
                     {
                         var incomingData = new byte[length];
                         Array.Copy(bytes, 0, incomingData, 0, length);
-                        // Convert byte array to string message.                        
                         string serverMessage = Encoding.ASCII.GetString(incomingData);
+                        //data format {gender}&{clinicIssue}"
+                        string[] data = serverMessage.Split('&');
+                        EventManager.OnClientGenderSet.Invoke(datahelper.GetGender(data[0]));
+                        EventManager.OnClinicIssueChange.Invoke(datahelper.GetPatientClinicIssue(data[1]));
                         Debug.Log("server message received as: " + serverMessage);
                     }
                 }
@@ -76,46 +80,6 @@ public class ClientManager : MonoBehaviour
 
         Debug.Log("Exiting...");
     }
-    string GetLocalIPAddress()
-    {
-        var host = Dns.GetHostEntry(Dns.GetHostName());
-        foreach (var ip in host.AddressList)
-        {
-            if (ip.AddressFamily == AddressFamily.InterNetwork)
-            {
-                return ip.ToString();
-            }
-        }
-        throw new Exception("No network adapters with an IPv4 address in the system!");
-    }
+    #endregion
 
-
-    /// <summary>   
-    /// Send message to server using socket connection.     
-    /// </summary>  
-    private void SendMessage()
-    {
-        if (socketConnection == null)
-        {
-            return;
-        }
-        try
-        {
-            // Get a stream object for writing.             
-            NetworkStream stream = socketConnection.GetStream();
-            if (stream.CanWrite)
-            {
-                string clientMessage = "This is a message from one of your clients.";
-                // Convert string message to byte array.                 
-                byte[] clientMessageAsByteArray = Encoding.ASCII.GetBytes(clientMessage);
-                // Write byte array to socketConnection stream.                 
-                stream.Write(clientMessageAsByteArray, 0, clientMessageAsByteArray.Length);
-                Debug.Log("Client sent his message - should be received by server");
-            }
-        }
-        catch (SocketException socketException)
-        {
-            Debug.Log("Socket exception: " + socketException);
-        }
-    }
 }

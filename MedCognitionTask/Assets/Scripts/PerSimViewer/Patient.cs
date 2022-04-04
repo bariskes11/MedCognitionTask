@@ -14,6 +14,6 @@ public class Patient : MonoBehaviour, IPatient
     #region Public Fields
     public Transform Transform => this.Transform;
     public Animator Animator => this.GetComponent<Animator>();
-    public PatientGender patientGender => this.gender;
+    public PatientGender PatientGender => this.gender;
     #endregion
 }

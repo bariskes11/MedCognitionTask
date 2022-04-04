@@ -21,7 +21,7 @@ public class CameraControllers : MonoBehaviour
         if (!this.isconnectionready)
             return;
         cam.transform.LookAt(this.currentPatient.Transform);
-
+        
 
     }
     #endregion
