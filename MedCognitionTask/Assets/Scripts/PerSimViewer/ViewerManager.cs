@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using static PublicCommons;
+using TMPro;
+
 public class ViewerManager : MonoBehaviour
 {
     #region Unity Fields
@@ -13,21 +15,24 @@ public class ViewerManager : MonoBehaviour
     List<Patient> patients;
     [SerializeField]
     Transform spawnPoint;
+    // for detecting  current animation name
+    [SerializeField]
+    TextMeshProUGUI txtCurrentAnimName;
     #endregion
-
     #region Fields
     GameObject currentPatient;
     #endregion
     #region Unity Methods
     private void Start()
     {
+        txtCurrentAnimName.text = string.Empty;
         connectingCanvas.SetActive(true);
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         if (patients == null)
         {
             Debug.Log($"Patiens Aren't set!!");
         }
-#endif
+        #endif
     }
     #endregion
     #region Public Methods
@@ -35,20 +40,17 @@ public class ViewerManager : MonoBehaviour
     {
         if (gender == PatientGender.None) { return; }
         connectingCanvas.SetActive(false);
-        Debug.Log($" Event Has Been Called for Gender {gender}");
         if (this.spawnPoint.GetComponentInChildren<IPatient>() != null) // destrot previus patient
         {
             Destroy(this.spawnPoint.GetComponentInChildren<IPatient>().Transform.gameObject);
         }
         var patient = patients.Where(x => x.GetComponent<IPatient>().PatientGender == gender).FirstOrDefault();
-
         currentPatient = Instantiate(patient.gameObject, spawnPoint);
         currentPatient.transform.position = Vector3.zero;
-
     }
     public void ClinicIssueSet(PatientClinicIssueType clinicIssue)
     {
-        Debug.Log($" Event Has Been Called for clinic Issue {clinicIssue}");
+        txtCurrentAnimName.text = $"Current Animation Name  : {clinicIssue} ";
         if (clinicIssue == PatientClinicIssueType.None) { return; }
         currentPatient.GetComponent<IPatient>().SetAnimation(clinicIssue);
     }

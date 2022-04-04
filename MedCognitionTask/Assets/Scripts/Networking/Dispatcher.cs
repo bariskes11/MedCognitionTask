@@ -6,6 +6,7 @@ using System.Threading;
 
 /// <summary>
 /// A system for dispatching code to execute on the main thread.
+/// Dispacher is important for Reaching GameObjects viaSubThreads and accessing the main thread.
 /// </summary>
 public class Dispatcher : MonoBehaviour
 {

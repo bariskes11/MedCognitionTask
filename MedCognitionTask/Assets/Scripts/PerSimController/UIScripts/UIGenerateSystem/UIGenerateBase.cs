@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using System.Linq;
 using UnityEngine;
-
+/// <summary>
+/// Main class to Call UI Items from Generator
+/// </summary>
 public abstract class UIGenerateBase : MonoBehaviour
 {
     #region Unity Fields
@@ -23,5 +25,6 @@ public abstract class UIGenerateBase : MonoBehaviour
 
     protected virtual void SetUI()
     {
+        /// content of method changes by Inherited class
     }
 }

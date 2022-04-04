@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static PublicCommons;
-
+/// <summary>
+/// Create Items in Gender Panel calls from factory
+/// </summary>
 public class UIGender : UIGenerateBase
 {
     #region Unity Fields

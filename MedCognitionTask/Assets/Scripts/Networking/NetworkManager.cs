@@ -9,10 +9,12 @@ using System.Net;
 using System;
 using System.Text;
 using static PublicCommons;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Runtime.Serialization;
 
-public class NetworkManager : MonoBehaviour
+/// <summary>
+/// Main server sends data to connected clients
+/// Made singleton to not lose instance over scenes
+/// </summary>
+public class NetworkManager : CreateSingleton<NetworkManager>
 {
     #region Unity Fields
     [SerializeField]
@@ -29,6 +31,7 @@ public class NetworkManager : MonoBehaviour
     void Start()
     {
         StartThread();
+        
         EventManager.OnSelectedItem.AddListener(SelectedPatient);
     }
 
@@ -39,14 +42,6 @@ public class NetworkManager : MonoBehaviour
         tcpListenerThread.IsBackground = true;
         tcpListenerThread.Start();
     }
-
-    void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    SelectedPatient(PatientGender.Female, PatientClinicIssueType.None);
-        //}
-    }
     #endregion
 
     #region Private Methods
@@ -54,7 +49,7 @@ public class NetworkManager : MonoBehaviour
     {
         try
         {
-            tcpListener = new TcpListener(IPAddress.Parse(masterPCIP.MasterIp), 8074);
+            tcpListener = new TcpListener(IPAddress.Parse(masterPCIP.MasterIp), masterPCIP.MasterPort);
             tcpListener.Start();
             Debug.Log("Server is listening");
             Byte[] bytes = new Byte[512];
@@ -95,25 +90,6 @@ public class NetworkManager : MonoBehaviour
             if (stream.CanWrite)
             {
                 SendData(stream, $"{gender}&{clinicIssueType}");
-            }
-        }
-        catch (SocketException socketException)
-        {
-            Debug.Log("Socket exception: " + socketException);
-        }
-    }
-    void SelectedPatientClinicIssue(PatientGender gender, PatientClinicIssueType clinicIssue)
-    {
-        if (connectedTcpClient == null)
-        {
-            return;
-        }
-        try
-        {
-            NetworkStream stream = connectedTcpClient.GetStream();
-            if (stream.CanWrite)
-            {
-                SendData(stream,$"{gender}&{clinicIssue}");
             }
         }
         catch (SocketException socketException)

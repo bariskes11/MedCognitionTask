@@ -7,7 +7,6 @@ public static class PublicCommons
     
     public const string anim_MotionSwicher = "MotionSwitcher";
     // Prefab Name for generalresources 
-    
     public enum ResourceItem
     {
         UIGenderItem,

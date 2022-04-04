@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using UnityEngine;
-
+/// <summary>
+///  Recieves and processes packet from server made singleton to not lose data over scene changes
+/// </summary>
 [RequireComponent(typeof(ViewerManager))]
-public class ClientManager : MonoBehaviour
+public class ClientManager : CreateSingleton<ClientManager>
 {
     #region Unity Fields
     [SerializeField]
     MasterPCIP masterPCIP;
     #endregion
-
     #region Fields
     DataHelper datahelper = new DataHelper();
     TcpClient socketConnection;
@@ -47,17 +45,16 @@ public class ClientManager : MonoBehaviour
     }
     /// <summary>   
     /// Runs in background clientReceiveThread; Listens for incoming data.  
+    /// If not connected tries to connect until found server
     /// </summary>     
-    /// 
+
     private void ListenForData()
     {
-    retryconnect:
+    retryconnect: // in anycase of lsing connection try to connect again
         try
         {
-            socketConnection = new TcpClient(masterPCIP.MasterIp, 8074);
-
+            socketConnection = new TcpClient(masterPCIP.MasterIp, masterPCIP.MasterPort);
             Byte[] bytes = new Byte[512];
-
             while (true)
             {
                 if (socketConnection.Connected)
@@ -80,19 +77,18 @@ public class ClientManager : MonoBehaviour
                                 viewerManager.GenderSet(datahelper.GetGender(data[0]));
                                 viewerManager.ClinicIssueSet(datahelper.GetPatientClinicIssue(data[1]));
                             });
-                            
                         }
                     }
                 }
+                goto retryconnect;
+
             }
         }
-        catch (SocketException socketException)
+        catch (Exception socketException)
         {
             Debug.Log("Socket exception: " + socketException);
+            goto retryconnect;
         }
-
-        Debug.Log("RetryinConnection...");
-        goto retryconnect;
     }
     #endregion
 

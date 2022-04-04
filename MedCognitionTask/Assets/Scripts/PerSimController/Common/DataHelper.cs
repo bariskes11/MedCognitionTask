@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static PublicCommons;
-
+/// <summary>
+/// Used for parsing data from Server To clinet.
+/// </summary>
 public class DataHelper 
 {
     public PatientGender GetGender(string val)

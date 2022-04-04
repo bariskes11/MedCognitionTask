@@ -6,6 +6,10 @@ using System.Reflection;
 using UnityEngine;
 using static PublicCommons;
 
+/// <summary>
+/// To Create and Call any kind of OPbject From factory
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public static class FactoryGenerator<T> where T : class
 {
 
@@ -26,14 +30,14 @@ public static class FactoryGenerator<T> where T : class
         // this line uses System.Linq
         var factoryTypes = Assembly.GetAssembly(typeof(T)).GetTypes().Where(x => x.IsClass && !x.IsAbstract && x.IsSubclassOf((typeof(T))));
         
-        foreach (var type in factoryTypes)
+        foreach (Type type in factoryTypes)
         {
             //Creates instance of subclass
-            var factory = Activator.CreateInstance(type);
+            var factory = (T)Activator.CreateInstance(type) ;
             // get Name property of class as string 
             var rslt = factory.GetType().GetProperty(NAME).GetValue(factory) as string;
             // add to Dictionary
-            factoryTypesByName.Add(rslt, factory as T);
+            factoryTypesByName.Add(rslt, factory);
         }
     }
     /// 
