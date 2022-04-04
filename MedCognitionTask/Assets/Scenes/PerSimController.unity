@@ -1692,13 +1692,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1760663698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21736da8d2ff34743aeef80141fd8042, type: 3}
+  m_Script: {fileID: 11500000, guid: f5d5900ea753a6342b862d1614458403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   txtHeader: {fileID: 1361232719}
-  panelUIInfo: {fileID: 11400000, guid: 8bddcaf808220394f8e0bd960b722304, type: 2}
-  parentTransform: {fileID: 1760663699}
-  uiObject: {fileID: 0}
+  clinicPanelData: {fileID: 11400000, guid: 48b437abeeacbb241af0aa09e16cd8e2, type: 2}
 --- !u!114 &1760663701
 MonoBehaviour:
   m_ObjectHideFlags: 0

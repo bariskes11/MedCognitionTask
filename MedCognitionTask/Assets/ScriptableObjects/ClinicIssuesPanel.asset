@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: ClinicIssuesPanel
   m_EditorClassIdentifier: Assembly-CSharp::ClinicPanelData
   PanelType: 1
-  PanelHeader: Select a Clinical State
+  PanelHeader: Select a clinical state
   ClinicPanelItems:
   - ItemIndex: 1
     ItemText: Moderate Respiratory Distress
     ClinicIssueType: 1
   - ItemIndex: 2
-    ItemText: Severe Respratory Distress - 1
+    ItemText: Severe Respiratory Distress - 1
     ClinicIssueType: 2
   - ItemIndex: 3
-    ItemText: 'Chest Pain - 3 '
+    ItemText: Chest Pain - 3
     ClinicIssueType: 3
   - ItemIndex: 4
-    ItemText: Severe Respiratory Distress - 2
+    ItemText: Server Respiratory Distress - 2
     ClinicIssueType: 4
   - ItemIndex: 5
     ItemText: Coughting With Hands

@@ -22,5 +22,6 @@ public class UIClinicIssue : UIGenerateBase
             }
         }
     }
+    #endregion
 }
 
