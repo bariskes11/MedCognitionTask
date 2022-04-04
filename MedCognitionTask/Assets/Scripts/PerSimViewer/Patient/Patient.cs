@@ -12,7 +12,7 @@ public class Patient : MonoBehaviour, IPatient
     PatientGender gender;
     #endregion
     #region Public Fields
-    public Transform Transform => this.Transform;
+    public Transform Transform => this.gameObject.transform;
     public Animator Animator => this.GetComponent<Animator>();
     public PatientGender PatientGender => this.gender;
 

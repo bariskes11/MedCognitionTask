@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading;
+using System.Timers;
 using UnityEngine;
 
+[RequireComponent(typeof(ViewerManager))]
 public class ClientManager : MonoBehaviour
 {
     #region Unity Fields
@@ -15,33 +16,29 @@ public class ClientManager : MonoBehaviour
     #endregion
 
     #region Fields
-    private DataHelper datahelper = new DataHelper();
-    private TcpClient socketConnection;
-    private Thread clientReceiveThread;
+    DataHelper datahelper = new DataHelper();
+    TcpClient socketConnection;
+    Timer timer;
+    ViewerManager viewerManager;
     #endregion
     #region Unity Methods
     void Start()
     {
-        ConnectToTcpServer();
+        // setup ping rate
+        timer = new Timer();
+        timer.Interval = 1000;
+        timer.Elapsed += _timer_Elapsed;
+        timer.Start();
+        viewerManager = this.GetComponent<ViewerManager>();
+        
+    }
+    private void _timer_Elapsed(object sender, ElapsedEventArgs e)
+    {
+        ListenForData();
     }
     #endregion
     #region Private Methods
-    /// <summary>   
-    /// Setup socket connection.    
-    /// </summary>  
-    private void ConnectToTcpServer()
-    {
-        try
-        {
-            clientReceiveThread = new Thread(new ThreadStart(ListenForData));
-            clientReceiveThread.IsBackground = true;
-            clientReceiveThread.Start();
-        }
-        catch (Exception e)
-        {
-            Debug.Log("On client connect exception " + e);
-        }
-    }
+  
     /// <summary>   
     /// Runs in background clientReceiveThread; Listens for incoming data.  
     /// </summary>     
@@ -50,10 +47,11 @@ public class ClientManager : MonoBehaviour
     {
         try
         {
+            Debug.Log($"Checking Data");
+            
             socketConnection = new TcpClient(masterPCIP.MasterIp, 8074);
             Byte[] bytes = new Byte[512];
-            while (true)
-            {
+            
                 // Get a stream object for reading              
                 using (NetworkStream stream = socketConnection.GetStream())
                 {
@@ -66,12 +64,13 @@ public class ClientManager : MonoBehaviour
                         string serverMessage = Encoding.ASCII.GetString(incomingData);
                         //data format {gender}&{clinicIssue}"
                         string[] data = serverMessage.Split('&');
-                        EventManager.OnClientGenderSet.Invoke(datahelper.GetGender(data[0]));
-                        EventManager.OnClinicIssueChange.Invoke(datahelper.GetPatientClinicIssue(data[1]));
+                        viewerManager.GenderSet(datahelper.GetGender(data[0]));
+                        //EventManager.OnClientGenderSet.Invoke();
+                        //EventManager.OnClinicIssueChange.Invoke(datahelper.GetPatientClinicIssue(data[1]));
                         Debug.Log("server message received as: " + serverMessage);
                     }
                 }
-            }
+            
         }
         catch (SocketException socketException)
         {
