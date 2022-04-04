@@ -32,9 +32,10 @@ public class ViewerManager : MonoBehaviour
         EventManager.OnClinicIssueChange.AddListener(ClinicIssueSet);
     }
     #endregion
-    #region Private Methods
+    #region Public Methods
     public void GenderSet(PatientGender gender)
     {
+        if (gender == PatientGender.None) { return; }
         connectingCanvas.SetActive(false);
         Debug.Log($" Event Has Been Called for Gender {gender}");
         if (this.spawnPoint.GetComponentInChildren<IPatient>() != null) // destrot previus patient
@@ -47,7 +48,7 @@ public class ViewerManager : MonoBehaviour
         currentPatient.transform.position = Vector3.zero;
 
     }
-    void ClinicIssueSet(PatientClinicIssueType clinicIssue)
+    public void ClinicIssueSet(PatientClinicIssueType clinicIssue)
     {
         Debug.Log($" Event Has Been Called for clinic Issue {clinicIssue}");
         if (clinicIssue == PatientClinicIssueType.None) { return; }
