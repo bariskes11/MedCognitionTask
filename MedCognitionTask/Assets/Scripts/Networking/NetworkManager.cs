@@ -19,8 +19,6 @@ public class NetworkManager : CreateSingleton<NetworkManager>
     #region Unity Fields
     [SerializeField]
     MasterPCIP masterPCIP;
-    [SerializeField]
-    TextMeshProUGUI txtStatus;
     #endregion
     #region Fields
     TcpListener tcpListener;
