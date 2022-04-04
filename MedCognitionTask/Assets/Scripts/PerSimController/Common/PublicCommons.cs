@@ -4,19 +4,22 @@ using UnityEngine;
 
 public static class PublicCommons
 {
-    // static room name for game
-    public const string ROOMNAME = "ROOM1";
+    
+    public const string anim_MotionSwicher = "MotionSwitcher";
     // Prefab Name for generalresources 
+    
     public enum ResourceItem
     {
         UIGenderItem,
         UIClinicalStateItem
     }
+    //Panel Types
     public enum PanelType
     {
         SelectGenderPanel,
         SelectClinicStatePanel
     }
+    //Gender Selection
     public enum PatientGender
     {
         None,
@@ -24,6 +27,7 @@ public static class PublicCommons
         Female,
     }
 
+    //clinical Issues
     public enum PatientClinicIssueType
     {
         None,
