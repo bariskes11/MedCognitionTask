@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b906096cd1aca864a9d2693d4a0dcd46, type: 3}
   m_Name: ClinicIssuesPanel
   m_EditorClassIdentifier: Assembly-CSharp::ClinicPanelData
   PanelType: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
     ItemText: Severe Respiratory Distress - 1
     ClinicIssueType: 2
   - ItemIndex: 3
-    ItemText: Chest Pain - 3
+    ItemText: Chest Paint - 3
     ClinicIssueType: 3
   - ItemIndex: 4
     ItemText: Server Respiratory Distress - 2
