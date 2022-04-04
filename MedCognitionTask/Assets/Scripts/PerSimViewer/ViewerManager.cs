@@ -28,8 +28,6 @@ public class ViewerManager : MonoBehaviour
             Debug.Log($"Patiens Aren't set!!");
         }
 #endif
-        EventManager.OnClientGenderSet.AddListener(GenderSet);
-        EventManager.OnClinicIssueChange.AddListener(ClinicIssueSet);
     }
     #endregion
     #region Public Methods

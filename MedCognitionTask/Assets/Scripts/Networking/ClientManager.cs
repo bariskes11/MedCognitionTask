@@ -77,11 +77,8 @@ public class ClientManager : MonoBehaviour
                             Dispatcher.InvokeAsync(() =>
                             {
                                 Debug.Log("server message received as: " + serverMessage);
-
-                                this.GetComponent<ViewerManager>().GenderSet(datahelper.GetGender(data[0]));
-                                this.GetComponent<ViewerManager>().ClinicIssueSet(datahelper.GetPatientClinicIssue(data[1]));
-                                //  EventManager.OnClientGenderSet.Invoke(datahelper.GetGender(data[0])); 
-                                //  EventManager.OnClinicIssueChange.Invoke(datahelper.GetPatientClinicIssue(data[1]));
+                                viewerManager.GenderSet(datahelper.GetGender(data[0]));
+                                viewerManager.ClinicIssueSet(datahelper.GetPatientClinicIssue(data[1]));
                             });
                             
                         }
