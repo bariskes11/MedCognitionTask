@@ -204,7 +204,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 313602539}
-  - component: {fileID: 313602540}
   - component: {fileID: 313602538}
   m_Layer: 0
   m_Name: ViewerGameManager
@@ -245,19 +244,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &313602540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313602537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8bcd2a9f3c7e7244ac260127d07f364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  masterPCIP: {fileID: 11400000, guid: f08501de50989654ab8f6e456980d519, type: 2}
 --- !u!1 &377499750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1056,8 @@ GameObject:
   - component: {fileID: 1992702020}
   - component: {fileID: 1992702019}
   - component: {fileID: 1992702018}
+  - component: {fileID: 1992702022}
+  - component: {fileID: 1992702023}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1158,3 +1146,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1992702022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992702017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bcd2a9f3c7e7244ac260127d07f364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterPCIP: {fileID: 11400000, guid: f08501de50989654ab8f6e456980d519, type: 2}
+--- !u!114 &1992702023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992702017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd084714bf7f454d86a5dd02ce990b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

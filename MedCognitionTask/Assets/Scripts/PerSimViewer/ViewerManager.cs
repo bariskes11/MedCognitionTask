@@ -31,11 +31,11 @@ public class ViewerManager : MonoBehaviour
         EventManager.OnClientGenderSet.AddListener(GenderSet);
         EventManager.OnClinicIssueChange.AddListener(ClinicIssueSet);
     }
-    [ContextMenu("Create Man")]
-    void TestGender()
-    {
-        GenderSet(PatientGender.Male);
-    }
+    //[ContextMenu("Create Man")]
+    //void TestGender()
+    //{
+    //    GenderSet(PatientGender.Male);
+    //}
     #endregion
     #region Private Methods
     public void GenderSet(PatientGender gender)

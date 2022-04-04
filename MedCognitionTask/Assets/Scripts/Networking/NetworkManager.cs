@@ -28,11 +28,18 @@ public class NetworkManager : MonoBehaviour
     #region Unity Methods
     void Start()
     {
+        StartThread();
+        EventManager.OnSelectedItem.AddListener(SelectedPatient);
+    }
+
+    private void StartThread()
+    {
+   
         tcpListenerThread = new Thread(new ThreadStart(ListenForIncomingRequests));
         tcpListenerThread.IsBackground = true;
         tcpListenerThread.Start();
-        EventManager.OnSelectedItem.AddListener(SelectedPatient);
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
