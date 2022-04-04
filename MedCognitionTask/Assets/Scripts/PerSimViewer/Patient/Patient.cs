@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using static PublicCommons;
 
+/// <summary>
+/// Manages Patients animations and data
+/// </summary>
 [RequireComponent(typeof(Animator))]
 public class Patient : MonoBehaviour, IPatient
 {

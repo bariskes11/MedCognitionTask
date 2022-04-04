@@ -15,7 +15,7 @@ public class ViewerManager : MonoBehaviour
     List<Patient> patients;
     [SerializeField]
     Transform spawnPoint;
-    // for detecting  current animation name
+    // for detecting  current animation name (test)
     [SerializeField]
     TextMeshProUGUI txtCurrentAnimName;
     #endregion
@@ -36,6 +36,10 @@ public class ViewerManager : MonoBehaviour
     }
     #endregion
     #region Public Methods
+    /// <summary>
+    /// Creates Patient in Viewers scene
+    /// </summary>
+    /// <param name="gender"></param>
     public void GenderSet(PatientGender gender)
     {
         if (gender == PatientGender.None) { return; }
@@ -48,6 +52,10 @@ public class ViewerManager : MonoBehaviour
         currentPatient = Instantiate(patient.gameObject, spawnPoint);
         currentPatient.transform.position = Vector3.zero;
     }
+    /// <summary>
+    /// Sets Animation based on clinic Issue
+    /// </summary>
+    /// <param name="clinicIssue"></param>
     public void ClinicIssueSet(PatientClinicIssueType clinicIssue)
     {
         txtCurrentAnimName.text = $"Current Animation Name  : {clinicIssue} ";
