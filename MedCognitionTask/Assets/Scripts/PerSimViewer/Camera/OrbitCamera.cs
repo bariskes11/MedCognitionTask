@@ -33,12 +33,15 @@ public class OrbitCamera : MonoBehaviour
     {
         cam = Camera.main;
         fov = cam.fieldOfView;
+        //initial distance
+        OrbitAction();
     }
     void Update()
     {
+        this.SetZoomInOut();
         if (!Input.GetMouseButton(0)) { return; }
         this.OrbitAction();
-        this.SetZoomInOut();
+        
     }
     private void SetZoomInOut()
     {

@@ -15,27 +15,39 @@ public class ViewerManager : MonoBehaviour
     Transform spawnPoint;
     #endregion
 
+    #region Fields
+    GameObject currentPatient;
+    #endregion
     #region Unity Methods
     private void Start()
     {
-        EventManager.OnClientGenderSet.AddListener(GenderSet);
-    }
-    #endregion
-    #region Private Methods
-    void GenderSet(PatientGender gender)
-    {
+        connectingCanvas.SetActive(true);
 #if UNITY_EDITOR
         if (patients == null)
         {
             Debug.Log($"Patiens Aren't set!!");
         }
 #endif
+        EventManager.OnClientGenderSet.AddListener(GenderSet);
+        EventManager.OnClinicIssueChange.AddListener(ClinicIssueSet);
+    }
+    #endregion
+    #region Private Methods
+    void GenderSet(PatientGender gender)
+    {
+        if (this.spawnPoint.GetComponentInChildren<IPatient>() != null) // destrot previus patient
+        {
+            Destroy(this.spawnPoint.GetComponentInChildren<IPatient>().Transform.gameObject);
+        }
         var patient = patients.Where(x => x.GetComponent<IPatient>().PatientGender == gender).FirstOrDefault();
         Debug.Log($" Event Has Been Called for Gender {gender}");
-        GameObject gmobj = Instantiate(patient.gameObject,spawnPoint);
-        gmobj.transform.position = Vector3.zero;
+        currentPatient = Instantiate(patient.gameObject, spawnPoint);
+        currentPatient.transform.position = Vector3.zero;
         connectingCanvas.SetActive(false);
     }
-
+    void ClinicIssueSet(PatientClinicIssueType clinicIssue)
+    {
+        if (clinicIssue == PatientClinicIssueType.None) { return; }
+    }
     #endregion
 }

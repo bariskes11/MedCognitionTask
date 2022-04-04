@@ -15,5 +15,12 @@ public class Patient : MonoBehaviour, IPatient
     public Transform Transform => this.Transform;
     public Animator Animator => this.GetComponent<Animator>();
     public PatientGender PatientGender => this.gender;
+
+    public void SetAnimation(PatientClinicIssueType patientClinicIssueType)
+    {
+        //TO DO change animation to target with in 5 sec
+    }
     #endregion
+
+
 }
