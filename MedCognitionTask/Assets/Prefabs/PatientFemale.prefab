@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e26b18e4800c741a8b03a445681534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeoutPerLoop: 0.0005
+  timeoutPerLoop: 0.002
   gender: 2
 --- !u!1 &1220680650390680934
 GameObject:

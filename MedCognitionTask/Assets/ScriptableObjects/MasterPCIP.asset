@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12eceb075f8afb64eb3ba252981cbbfe, type: 3}
   m_Name: MasterPCIP
   m_EditorClassIdentifier: 
-  MasterIp: 192.168.1.33
+  MasterIp: 192.168.1.131
   MasterPort: 8074

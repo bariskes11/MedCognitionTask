@@ -25,6 +25,8 @@ public class ViewerManager : MonoBehaviour
     #region Unity Methods
     private void Start()
     {
+        //fixed framerate
+        Application.targetFrameRate = 60;
         txtCurrentAnimName.text = string.Empty;
         connectingCanvas.SetActive(true);
         #if UNITY_EDITOR
